@@ -47,8 +47,8 @@ public class BatteryInfoNotifier {
 
       let currentInfo = batteryInfo(forDevice: BatteryInfoNotifier.device)
 
-      guard currentInfo.state != self?.info.state,
-        currentInfo.level != self?.info.level else {
+      guard currentInfo.state != self?.info.state
+        || currentInfo.level != self?.info.level else {
         return
       }
 
