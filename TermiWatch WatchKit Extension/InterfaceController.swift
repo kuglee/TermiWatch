@@ -50,6 +50,11 @@ struct ActivityRingColors {
   static let stand = UIColor(red: 0.353, green: 0.784, blue: 0.98, alpha: 1.0)
 }
 
+struct BatteryStateColors {
+  static let normal = UIColor(red: 0.569, green: 0.831, blue: 0.384, alpha: 1.0)
+  static let low = UIColor.red
+}
+
 func colorAttributedString(string: String, color: UIColor)
   -> NSAttributedString {
   let colorAttribute = [NSAttributedString.Key.foregroundColor: color]
@@ -237,11 +242,13 @@ class InterfaceController: WKInterfaceController {
         return
       }
 
-      let batteryInfoString = batteryIndicatorString(
-        percent: UInt(batteryInfo.level)
+      let batteryInfoAttributedString = colorAttributedString(
+        string: batteryIndicatorString(percent: UInt(batteryInfo.level)),
+        color: batteryInfo.level <= 20 ? BatteryStateColors.low
+          : BatteryStateColors.normal
       )
 
-      self?.batteryLabel.setText(batteryInfoString)
+      self?.batteryLabel.setAttributedText(batteryInfoAttributedString)
     }
 
     BatteryInfoNotifier.shared.start()
