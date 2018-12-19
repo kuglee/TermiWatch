@@ -8,7 +8,7 @@ Terminal Watch Face for Apple Watch.
 
 Inspired by [this](https://www.reddit.com/r/unixporn/comments/9ndo8o/oc_always_keep_some_terminal_with_you/) post on Reddit by u/quarl0w.
 
-For devices running watchOS 4 or higher.
+For devices running watchOS 5 or higher.
 
 
 # How to install
