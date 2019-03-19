@@ -8,7 +8,7 @@ Terminal Watch Face for Apple Watch.
 
 Inspired by [this](https://www.reddit.com/r/unixporn/comments/9ndo8o/oc_always_keep_some_terminal_with_you/) post on Reddit by u/quarl0w.
 
-For devices running watchOS 5 or higher.
+For devices running watchOS 4 or higher.
 
 
 # How to install
@@ -32,9 +32,7 @@ For devices running watchOS 5 or higher.
   ![Manage Certificates](Screenshots/Manage_certificates.png)
 
 ## Configuring the project
-  1. Download the latest version:
-  - [Xcode 10.1 and older](https://github.com/kuglee/TermiWatch/releases/1.1.1)
-  - [Xcode 10.2](https://github.com/kuglee/TermiWatch/releases/latest)
+  1. Download the [latest version](https://github.com/kuglee/TermiWatch/releases/latest).
   1. Open **TermiWatch.xcodeproj** in **XCode**.
   1. Change the project's developer account:
       1. Select the project in the **Project Navigator**.
