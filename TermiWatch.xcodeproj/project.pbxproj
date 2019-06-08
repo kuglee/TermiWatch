@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1B79BC22ABA8EC00EB82EA /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79BB22ABA8EC00EB82EA /* PromiseKit */; };
+		5D1B79BE22ABAA0D00EB82EA /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79BD22ABAA0D00EB82EA /* PromiseKit */; };
+		5D1B79C122ABAA2300EB82EA /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79C022ABAA2300EB82EA /* PMKFoundation */; };
 		5D3E852D21A0246C00FA946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852C21A0246C00FA946B /* AppDelegate.swift */; };
 		5D3E852F21A0246C00FA946B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852E21A0246C00FA946B /* ViewController.swift */; };
 		5D3E853221A0246C00FA946B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E853021A0246C00FA946B /* Main.storyboard */; };
@@ -20,25 +23,13 @@
 		5D3E855221A0246E00FA946B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E855121A0246E00FA946B /* ExtensionDelegate.swift */; };
 		5D3E855421A0246F00FA946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E855321A0246F00FA946B /* Assets.xcassets */; };
 		5D3E856621A0271300FA946B /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */; };
-		5D3E856A21A0288100FA946B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3E856921A0288100FA946B /* HealthKit.framework */; };
-		5D3E856D21A0288700FA946B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3E856C21A0288700FA946B /* HealthKit.framework */; };
 		5D50F69721AA972B00A9E754 /* BatteryInfoNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */; };
 		5D50F69921AAD6D400A9E754 /* TemperatureNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */; };
 		5DB67F1F21A3E60C00AFA77A /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */; };
-		5DC7C07B21B3037D008E8AC0 /* PMKFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07A21B3037D008E8AC0 /* PMKFoundation.framework */; };
-		5DDA448921BF17730011249F /* PMKHealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07D21B505AB008E8AC0 /* PMKHealthKit.framework */; };
-		5DDA448A21BF17730011249F /* PMKHealthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07D21B505AB008E8AC0 /* PMKHealthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA448B21BF17790011249F /* PMKCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07E21B505AB008E8AC0 /* PMKCoreLocation.framework */; };
-		5DDA448C21BF17790011249F /* PMKCoreLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07E21B505AB008E8AC0 /* PMKCoreLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA448D21BF177E0011249F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07C21B505AB008E8AC0 /* PromiseKit.framework */; };
-		5DDA448E21BF177E0011249F /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07C21B505AB008E8AC0 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA449521BF17A10011249F /* PMKCoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07421AFE5CC008E8AC0 /* PMKCoreLocation.framework */; };
-		5DDA449621BF17A10011249F /* PMKCoreLocation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07421AFE5CC008E8AC0 /* PMKCoreLocation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA449921BF17A60011249F /* PMKFoundation.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07A21B3037D008E8AC0 /* PMKFoundation.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA449A21BF17AB0011249F /* PMKHealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07521AFE5CD008E8AC0 /* PMKHealthKit.framework */; };
-		5DDA449B21BF17AB0011249F /* PMKHealthKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07521AFE5CD008E8AC0 /* PMKHealthKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		5DDA449C21BF17B20011249F /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07321AFE5CC008E8AC0 /* PromiseKit.framework */; };
-		5DDA449D21BF17B20011249F /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC7C07321AFE5CC008E8AC0 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5DC87B1E22ABBA0E005243D5 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B1D22ABBA0E005243D5 /* PMKCoreLocation */; };
+		5DC87B2022ABBA18005243D5 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B1F22ABBA18005243D5 /* PMKCoreLocation */; };
+		5DC87B2322ABBACD005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2222ABBACD005243D5 /* PMKHealthKit */; };
+		5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2422ABBAD5005243D5 /* PMKHealthKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		5D1B79C522ABAAED00EB82EA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5D3E855B21A0246F00FA946B /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -79,33 +80,6 @@
 				5D3E853C21A0246E00FA946B /* TermiWatch WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DDA448821BF175F0011249F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5DDA448E21BF177E0011249F /* PromiseKit.framework in Embed Frameworks */,
-				5DDA448A21BF17730011249F /* PMKHealthKit.framework in Embed Frameworks */,
-				5DDA448C21BF17790011249F /* PMKCoreLocation.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5DDA449721BF17A10011249F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5DDA449B21BF17AB0011249F /* PMKHealthKit.framework in Embed Frameworks */,
-				5DDA449921BF17A60011249F /* PMKFoundation.framework in Embed Frameworks */,
-				5DDA449621BF17A10011249F /* PMKCoreLocation.framework in Embed Frameworks */,
-				5DDA449D21BF17B20011249F /* PromiseKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -129,19 +103,10 @@
 		5D3E855521A0246F00FA946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
 		5D3E856721A0288100FA946B /* TermiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TermiWatch.entitlements; sourceTree = "<group>"; };
-		5D3E856921A0288100FA946B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		5D3E856B21A0288700FA946B /* TermiWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TermiWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		5D3E856C21A0288700FA946B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.1.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfoNotifier.swift; sourceTree = "<group>"; };
 		5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureNotifier.swift; sourceTree = "<group>"; };
 		5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitUtils.swift; sourceTree = "<group>"; };
-		5DC7C07321AFE5CC008E8AC0 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/watchOS/PromiseKit.framework; sourceTree = "<group>"; };
-		5DC7C07421AFE5CC008E8AC0 /* PMKCoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKCoreLocation.framework; path = Carthage/Build/watchOS/PMKCoreLocation.framework; sourceTree = "<group>"; };
-		5DC7C07521AFE5CD008E8AC0 /* PMKHealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKHealthKit.framework; path = Carthage/Build/watchOS/PMKHealthKit.framework; sourceTree = "<group>"; };
-		5DC7C07A21B3037D008E8AC0 /* PMKFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKFoundation.framework; path = Carthage/Build/watchOS/PMKFoundation.framework; sourceTree = "<group>"; };
-		5DC7C07C21B505AB008E8AC0 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/iOS/PromiseKit.framework; sourceTree = "<group>"; };
-		5DC7C07D21B505AB008E8AC0 /* PMKHealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKHealthKit.framework; path = Carthage/Build/iOS/PMKHealthKit.framework; sourceTree = "<group>"; };
-		5DC7C07E21B505AB008E8AC0 /* PMKCoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PMKCoreLocation.framework; path = Carthage/Build/iOS/PMKCoreLocation.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +114,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DDA448D21BF177E0011249F /* PromiseKit.framework in Frameworks */,
-				5DDA448921BF17730011249F /* PMKHealthKit.framework in Frameworks */,
-				5DDA448B21BF17790011249F /* PMKCoreLocation.framework in Frameworks */,
-				5D3E856A21A0288100FA946B /* HealthKit.framework in Frameworks */,
+				5D1B79BC22ABA8EC00EB82EA /* PromiseKit in Frameworks */,
+				5DC87B1E22ABBA0E005243D5 /* PMKCoreLocation in Frameworks */,
+				5DC87B2322ABBACD005243D5 /* PMKHealthKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,11 +124,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5DDA449A21BF17AB0011249F /* PMKHealthKit.framework in Frameworks */,
-				5D3E856D21A0288700FA946B /* HealthKit.framework in Frameworks */,
-				5DDA449521BF17A10011249F /* PMKCoreLocation.framework in Frameworks */,
-				5DDA449C21BF17B20011249F /* PromiseKit.framework in Frameworks */,
-				5DC7C07B21B3037D008E8AC0 /* PMKFoundation.framework in Frameworks */,
+				5D1B79BE22ABAA0D00EB82EA /* PromiseKit in Frameworks */,
+				5DC87B2022ABBA18005243D5 /* PMKCoreLocation in Frameworks */,
+				5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */,
+				5D1B79C122ABAA2300EB82EA /* PMKFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,7 +141,6 @@
 				5D3E853F21A0246E00FA946B /* TermiWatch WatchKit App */,
 				5D3E854E21A0246E00FA946B /* TermiWatch WatchKit Extension */,
 				5D3E852A21A0246C00FA946B /* Products */,
-				5D3E856821A0288100FA946B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,22 +194,6 @@
 			path = "TermiWatch WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		5D3E856821A0288100FA946B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5DC7C07E21B505AB008E8AC0 /* PMKCoreLocation.framework */,
-				5DC7C07D21B505AB008E8AC0 /* PMKHealthKit.framework */,
-				5DC7C07C21B505AB008E8AC0 /* PromiseKit.framework */,
-				5DC7C07A21B3037D008E8AC0 /* PMKFoundation.framework */,
-				5DC7C07421AFE5CC008E8AC0 /* PMKCoreLocation.framework */,
-				5DC7C07521AFE5CD008E8AC0 /* PMKHealthKit.framework */,
-				5DC7C07321AFE5CC008E8AC0 /* PromiseKit.framework */,
-				5D3E856C21A0288700FA946B /* HealthKit.framework */,
-				5D3E856921A0288100FA946B /* HealthKit.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -259,7 +205,6 @@
 				5D3E852621A0246C00FA946B /* Frameworks */,
 				5D3E852721A0246C00FA946B /* Resources */,
 				5D3E855F21A0246F00FA946B /* Embed Watch Content */,
-				5DDA448821BF175F0011249F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -267,6 +212,11 @@
 				5D3E853E21A0246E00FA946B /* PBXTargetDependency */,
 			);
 			name = TermiWatch;
+			packageProductDependencies = (
+				5D1B79BB22ABA8EC00EB82EA /* PromiseKit */,
+				5DC87B1D22ABBA0E005243D5 /* PMKCoreLocation */,
+				5DC87B2222ABBACD005243D5 /* PMKHealthKit */,
+			);
 			productName = TerminalWatchFace;
 			productReference = 5D3E852921A0246C00FA946B /* TermiWatch.app */;
 			productType = "com.apple.product-type.application";
@@ -295,13 +245,19 @@
 				5D3E854621A0246E00FA946B /* Sources */,
 				5D3E854721A0246E00FA946B /* Frameworks */,
 				5D3E854821A0246E00FA946B /* Resources */,
-				5DDA449721BF17A10011249F /* Embed Frameworks */,
+				5D1B79C522ABAAED00EB82EA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "TermiWatch WatchKit Extension";
+			packageProductDependencies = (
+				5D1B79BD22ABAA0D00EB82EA /* PromiseKit */,
+				5D1B79C022ABAA2300EB82EA /* PMKFoundation */,
+				5DC87B1F22ABBA18005243D5 /* PMKCoreLocation */,
+				5DC87B2422ABBAD5005243D5 /* PMKHealthKit */,
+			);
 			productName = "TerminalWatchFace WatchKit Extension";
 			productReference = 5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
@@ -346,6 +302,12 @@
 				Base,
 			);
 			mainGroup = 5D3E852021A0246C00FA946B;
+			packageReferences = (
+				5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */,
+				5DC87B1C22ABBA0E005243D5 /* XCRemoteSwiftPackageReference "CoreLocation" */,
+				5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */,
+			);
 			productRefGroup = 5D3E852A21A0246C00FA946B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,11 +539,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -593,7 +551,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -607,11 +565,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/watchOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -623,7 +577,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -644,7 +598,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -665,7 +619,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 5.0;
 			};
@@ -679,10 +633,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -691,7 +642,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -704,10 +655,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -716,7 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -761,6 +709,79 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.8.4;
+			};
+		};
+		5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/PromiseKit/Foundation";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.2;
+			};
+		};
+		5DC87B1C22ABBA0E005243D5 /* XCRemoteSwiftPackageReference "CoreLocation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kuglee/CoreLocation";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kuglee/PMKHealthKit";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5D1B79BB22ABA8EC00EB82EA /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		5D1B79BD22ABAA0D00EB82EA /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+		5D1B79C022ABAA2300EB82EA /* PMKFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */;
+			productName = PMKFoundation;
+		};
+		5DC87B1D22ABBA0E005243D5 /* PMKCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC87B1C22ABBA0E005243D5 /* XCRemoteSwiftPackageReference "CoreLocation" */;
+			productName = PMKCoreLocation;
+		};
+		5DC87B1F22ABBA18005243D5 /* PMKCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC87B1C22ABBA0E005243D5 /* XCRemoteSwiftPackageReference "CoreLocation" */;
+			productName = PMKCoreLocation;
+		};
+		5DC87B2222ABBACD005243D5 /* PMKHealthKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
+			productName = PMKHealthKit;
+		};
+		5DC87B2422ABBAD5005243D5 /* PMKHealthKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
+			productName = PMKHealthKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5D3E852121A0246C00FA946B /* Project object */;
 }
