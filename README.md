@@ -14,11 +14,11 @@ For devices running watchOS 5 or higher.
 # How to install
 
 ## Prerequisites
-  1. Install [XCode](https://itunes.apple.com/app/xcode/id497799835).
+  1. Install [Xcode](https://itunes.apple.com/app/xcode/id497799835).
   1. Become an Apple Developer by enrolling [here](https://developer.apple.com/programs/enroll/).
 
 ## Adding a developer account to Xcode
-  1. Go to **XCode** menu -> **Xcode** -> **Preferences…**.
+  1. Go to **Xcode** menu -> **Xcode** -> **Preferences…**.
   1. Select the **Accounts** tab.
   ![Add developer account to Xcode](Screenshots/Add_develper_account_to_xcode.png)
   1. Click the **+** button in the bottom left corner.
@@ -35,7 +35,8 @@ For devices running watchOS 5 or higher.
   1. Download the latest version (**DON'T USE THE GREEN DOWNLOAD BUTTON UNLESS YOU'RE A DEVELOPER. DOWNLOAD IT FROM THESE LINKS INSTEAD. THESE ALREADY HAVE THE REQUIRED LIBRARIES FOR EASIER INSTALLATION.**):
   - Xcode 10.1 and older: https://github.com/kuglee/TermiWatch/releases/1.1.1
   - Xcode 10.2: https://github.com/kuglee/TermiWatch/releases/latest
-  1. Open **TermiWatch.xcodeproj** in **XCode**.
+  - Xcode 11: https://github.com/kuglee/TermiWatch/archive/xcode_11.zip
+  1. Open **TermiWatch.xcodeproj** in **Xcode**.
   1. Change the project's developer account:
       1. Select the project in the **Project Navigator**.
       1. Click the **Show project and targets list** button in the top left corner.
@@ -45,7 +46,7 @@ For devices running watchOS 5 or higher.
       1. Change the **Team** to your team. (Usually this is your name.)
   ![Change team](Screenshots/Change_team.png)
   1. Manually replace bundle identifiers:
-      1. Select **XCode** menu -> **Find** -> **Find and Replace in Project…**.
+      1. Select **Xcode** menu -> **Find** -> **Find and Replace in Project…**.
       1. In the **Text** field type *kuglee*.
       1. In the **With** field type with then name of your developer account.
       1. Click the **Replace All** button.
@@ -55,8 +56,8 @@ For devices running watchOS 5 or higher.
 ## Installing the app
   1. Plug your phone into your computer.
   1. Unlock your phone and trust your computer.
-  1. Select **XCode** menu -> **Product** -> **Destination**. At the **Device** section select your phone.
-  1. Select **XCode** menu -> **Product** -> **Run**.
+  1. Select **Xcode** menu -> **Product** -> **Destination**. At the **Device** section select your phone.
+  1. Select **Xcode** menu -> **Product** -> **Run**.
   1. Wait for the app to install on your phone.
   1. Go to **Settings** -> **General** -> **Profiles & Device Management** on your phone to trust the app.
   1. Install the watchOS app from the **Watch** app.
