@@ -1,0 +1,43 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PMKCoreLocation",
+        "repositoryURL": "https://github.com/kuglee/CoreLocation",
+        "state": {
+          "branch": null,
+          "revision": "536e1bb4d1fae0f99be16aa23148e73fbf0ef812",
+          "version": "3.1.0"
+        }
+      },
+      {
+        "package": "PMKFoundation",
+        "repositoryURL": "https://github.com/PromiseKit/Foundation",
+        "state": {
+          "branch": null,
+          "revision": "1a276e598dac59489ed904887e0740fa75e571e0",
+          "version": "3.3.4"
+        }
+      },
+      {
+        "package": "PMKHealthKit",
+        "repositoryURL": "https://github.com/kuglee/PMKHealthKit",
+        "state": {
+          "branch": "master",
+          "revision": "d2f658bcd76baa524c60bd1c5e6f578328eb06af",
+          "version": null
+        }
+      },
+      {
+        "package": "PromiseKit",
+        "repositoryURL": "https://github.com/mxcl/PromiseKit",
+        "state": {
+          "branch": null,
+          "revision": "80963d4317bcdc03891e0fbaa744f20511d1bc08",
+          "version": "6.12.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
