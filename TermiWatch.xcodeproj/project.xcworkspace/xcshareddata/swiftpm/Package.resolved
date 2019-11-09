@@ -5,9 +5,9 @@
         "package": "PMKCoreLocation",
         "repositoryURL": "https://github.com/kuglee/CoreLocation",
         "state": {
-          "branch": "master",
-          "revision": "dd75b75df189238862d8fd5fd7ec2712a634f20b",
-          "version": null
+          "branch": null,
+          "revision": "536e1bb4d1fae0f99be16aa23148e73fbf0ef812",
+          "version": "3.1.0"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/PromiseKit/Foundation",
         "state": {
           "branch": null,
-          "revision": "0a59b0d89f469979aecacdf9046df14f99d1cc6b",
-          "version": "3.3.2"
+          "revision": "1a276e598dac59489ed904887e0740fa75e571e0",
+          "version": "3.3.4"
         }
       },
       {
@@ -24,7 +24,7 @@
         "repositoryURL": "https://github.com/kuglee/PMKHealthKit",
         "state": {
           "branch": "master",
-          "revision": "6e769d92e236b4c45ef32159c5e335d6d4df207a",
+          "revision": "d2f658bcd76baa524c60bd1c5e6f578328eb06af",
           "version": null
         }
       },
@@ -33,8 +33,8 @@
         "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {
           "branch": null,
-          "revision": "fe1e9c5b62465227cceb7b0e6e79489ba7b824af",
-          "version": "6.8.4"
+          "revision": "80963d4317bcdc03891e0fbaa744f20511d1bc08",
+          "version": "6.12.0"
         }
       }
     ]
