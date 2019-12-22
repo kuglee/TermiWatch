@@ -3,20 +3,31 @@ import HealthKit
 import PMKCoreLocation
 import PMKHealthKit
 import PromiseKit
+import Swizzle
 import WatchKit
 
 // MARK: - UIKit stubs
 
-fileprivate extension NSObject {
+private extension NSObject {
   @objc class func sharedApplication() -> NSObject? { fatalError() }
   @objc func keyWindow() -> NSObject? { fatalError() }
   @objc func rootViewController() -> NSObject? { fatalError() }
-  @objc func viewControllers() -> Array<NSObject> { fatalError() }
+  @objc func viewControllers() -> [NSObject]? { fatalError() }
   @objc func view() -> NSObject? { fatalError() }
-  @objc func subviews() -> Array<NSObject>? { fatalError() }
+  @objc func subviews() -> [NSObject]? { fatalError() }
   @objc func timeLabel() -> NSObject? { fatalError() }
   @objc func layer() -> NSObject? { fatalError() }
   @objc func setOpacity(_ opacity: CDouble) { fatalError() }
+}
+
+// MARK: - CLKTimeFormatter
+
+private typealias CLKTimeFormatter = NSObject
+
+private extension CLKTimeFormatter {
+  @objc func swizzled_timeText() -> NSString {
+    return NSString(string: " ")
+  }
 }
 
 // MARK: - TimeLabel
@@ -25,7 +36,7 @@ func getSPFullScreenView() -> NSObject? {
   let UIApplication = NSClassFromString("UIApplication") as? NSObject.Type
 
   if let views = UIApplication?.sharedApplication()?.keyWindow()?
-    .rootViewController()?.viewControllers().first?.view()?.subviews() {
+    .rootViewController()?.viewControllers()?.first?.view()?.subviews() {
     for view in views {
       if type(of: view) == NSClassFromString("SPFullScreenView") {
         return view
@@ -36,8 +47,24 @@ func getSPFullScreenView() -> NSObject? {
   return nil
 }
 
-var hideDefaultTimeLabelOnce: () -> Void = {
+func hideDefaultTimeLabel() {
   getSPFullScreenView()?.timeLabel()?.layer()?.setOpacity(0)
+}
+
+func swizzleDefaultTime() {
+  try! swizzleInstanceMethodObjcString(
+    of: "CLKTimeFormatter",
+    from: "timeText",
+    to: #selector(CLKTimeFormatter.swizzled_timeText)
+  )
+}
+
+var hideTimeOnce: () -> Void = {
+  if #available(watchOS 6, *) {
+    swizzleDefaultTime()
+  } else {
+    hideDefaultTimeLabel()
+  }
 
   return {}
 }()
@@ -257,6 +284,6 @@ class InterfaceController: WKInterfaceController {
   override func didAppear() {
     // Hack to make the digital time overlay disappear
     // from: https://github.com/steventroughtonsmith/SpriteKitWatchFace
-    hideDefaultTimeLabelOnce()
+    hideTimeOnce()
   }
 }

@@ -25,6 +25,7 @@
 		5D3E856621A0271300FA946B /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */; };
 		5D50F69721AA972B00A9E754 /* BatteryInfoNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */; };
 		5D50F69921AAD6D400A9E754 /* TemperatureNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */; };
+		5D8BEA7323AEE0000096F314 /* Swizzle in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8BEA7223AEE0000096F314 /* Swizzle */; };
 		5DB67F1F21A3E60C00AFA77A /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */; };
 		5DC87B2322ABBACD005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2222ABBACD005243D5 /* PMKHealthKit */; };
 		5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2422ABBAD5005243D5 /* PMKHealthKit */; };
@@ -128,6 +129,7 @@
 				5DD885B6237743E9003B1A55 /* PMKCoreLocation in Frameworks */,
 				5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */,
 				5D1B79C122ABAA2300EB82EA /* PMKFoundation in Frameworks */,
+				5D8BEA7323AEE0000096F314 /* Swizzle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +267,7 @@
 				5D1B79C022ABAA2300EB82EA /* PMKFoundation */,
 				5DC87B2422ABBAD5005243D5 /* PMKHealthKit */,
 				5DD885B5237743E9003B1A55 /* PMKCoreLocation */,
+				5D8BEA7223AEE0000096F314 /* Swizzle */,
 			);
 			productName = "TerminalWatchFace WatchKit Extension";
 			productReference = 5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */;
@@ -315,6 +318,7 @@
 				5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */,
 				5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */,
 				5DD885B2237743DC003B1A55 /* XCRemoteSwiftPackageReference "CoreLocation" */,
+				5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */,
 			);
 			productRefGroup = 5D3E852A21A0246C00FA946B /* Products */;
 			projectDirPath = "";
@@ -741,6 +745,14 @@
 				minimumVersion = 3.3.2;
 			};
 		};
+		5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kuglee/Swizzle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
+			};
+		};
 		5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kuglee/PMKHealthKit";
@@ -774,6 +786,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */;
 			productName = PMKFoundation;
+		};
+		5D8BEA7223AEE0000096F314 /* Swizzle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */;
+			productName = Swizzle;
 		};
 		5DC87B2222ABBACD005243D5 /* PMKHealthKit */ = {
 			isa = XCSwiftPackageProductDependency;
