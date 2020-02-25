@@ -30,6 +30,46 @@ private extension CLKTimeFormatter {
   }
 }
 
+// MARK: - Even
+
+    func letsSeeIfOneCanEven() -> String {
+        let dayOfWeek = weekdayNameFromDate()
+        let hourOfDay = getHourFromDate()
+        var status: String
+        print(dayOfWeek)
+        print(hourOfDay)
+
+        let evenCriteria = (day: dayOfWeek, hour: hourOfDay)
+        
+        switch evenCriteria {
+                        
+            case ("Monday", let hour) where hour >= 20 :
+                status = "🍔 Won't! 🥃"
+            case ("Wednesday",_):
+                status = "😞 Can't"
+            case ("Thursday",_):
+                status = "😞 Can't"
+            case (_,let hour) where hour >= 20 :
+                status = "👊🏻 Don't!"
+            default:
+                status = "👍 Can!"
+        }
+        print(status)
+        return "[EVEN]" + status
+    }
+
+    func weekdayNameFromDate() -> String {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEEE"
+        let currentDateString: String = dateFormatter.string(from: date)
+        return currentDateString
+    }
+
+    func getHourFromDate() -> Int {
+        return Calendar.current.component(.hour, from: Date())
+    }
+
 // MARK: - TimeLabel
 
 func getSPFullScreenView() -> NSObject? {
@@ -163,7 +203,8 @@ class InterfaceController: WKInterfaceController {
   @IBOutlet var stepsLabel: WKInterfaceLabel!
   @IBOutlet var heartRateLabel: WKInterfaceLabel!
   @IBOutlet var temperatureLabel: WKInterfaceLabel!
-
+  @IBOutlet var evenLabel: WKInterfaceLabel!
+    
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
 
@@ -190,7 +231,7 @@ class InterfaceController: WKInterfaceController {
     }.catch {
       print("Error:", $0)
     }
-
+    
     // MARK: - Health
 
     let healthStore = HKHealthStore()
@@ -285,5 +326,6 @@ class InterfaceController: WKInterfaceController {
     // Hack to make the digital time overlay disappear
     // from: https://github.com/steventroughtonsmith/SpriteKitWatchFace
     hideTimeOnce()
+    self.evenLabel.setText(letsSeeIfOneCanEven())
   }
 }
