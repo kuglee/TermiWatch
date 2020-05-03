@@ -15,7 +15,7 @@ For devices running watchOS 5 or higher.
 
 ## Prerequisites
   1. Install [Xcode](https://itunes.apple.com/app/xcode/id497799835).
-  1. Become an Apple Developer by enrolling [here](https://developer.apple.com/programs/enroll/).
+  1. Become an Apple Developer by logging in [here](https://developer.apple.com). (Select **Account** and log in with your Apple ID.)
 
 ## Adding a developer account to Xcode
   1. Go to **Xcode** menu -> **Xcode** -> **Preferences…**.
@@ -27,7 +27,7 @@ For devices running watchOS 5 or higher.
   ![Add developer account to Xcode 2](Screenshots/Add_develper_account_to_xcode_2.png)
   1. Click the **Manage Certificates…** button.
       1. Click the **+** button in the bottom left corner.
-      1. Select **iOS Development**.
+      1. Select **Apple Development**.
       1. Click the **Done** button.
   ![Manage Certificates](Screenshots/Manage_certificates.png)
 
@@ -40,17 +40,22 @@ For devices running watchOS 5 or higher.
   1. Change the project's developer account:
       1. Select the project in the **Project Navigator**.
       1. Click the **Show project and targets list** button in the top left corner.
-  ![Show project and targets list](Screenshots/Show_project_and_targets_list.png)
-  1. For each of the 3 **targets**:
-      1. Replece *kuglee* with the name of your developer account. (The name of your Apple ID without the *@xxxx.com*.)
-      1. Change the **Team** to your team. (Usually this is your name.)
-  ![Change team](Screenshots/Change_team.png)
+      ![Show project and targets list](Screenshots/Show_project_and_targets_list.png)
+      1. Select the **General** tab:  
+      ![Change bundle identifier 1](Screenshots/Change_bundle_identifier1.png)
+      1. For each of the 3 **targets** replece *kuglee* in the **Bundle Identifier** field with the name of your developer account. (The name of your Apple ID without the *@xxxx.com*.)
+      ![Change bundle identifier 2](Screenshots/Change_bundle_identifier2.png)
+  1. Change the project's team:
+      1. Select the **Signing & Capabilities** tab:    
+      ![Change team 1](Screenshots/Change_team1.png)  
+      1. For each of the 3 **targets** change the **Team** to your team. (Usually this is your name.)  
+      ![Change team 2](Screenshots/Change_team2.png)    
   1. Manually replace bundle identifiers:
       1. Select **Xcode** menu -> **Find** -> **Find and Replace in Project…**.
       1. In the **Text** field type *kuglee*.
-      1. In the **With** field type with then name of your developer account.
+      1. In the **With** field type the name of your developer account. (The name of your Apple ID without the @xxxx.com.)
       1. Click the **Replace All** button.
-  ![Change bundle identifier](Screenshots/Change_bundle_identifier.png)
+  ![Change bundle identifier 3](Screenshots/Change_bundle_identifier3.png)
 
 
 ## Installing the app
