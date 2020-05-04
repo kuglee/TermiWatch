@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "PMKCoreLocation",
-        "repositoryURL": "https://github.com/kuglee/CoreLocation",
+        "repositoryURL": "https://github.com/PromiseKit/CoreLocation",
         "state": {
           "branch": null,
-          "revision": "536e1bb4d1fae0f99be16aa23148e73fbf0ef812",
-          "version": "3.1.0"
+          "revision": "d027bbcdfffc83fa7a790aa6f9189b18c94632e2",
+          "version": "3.1.1"
         }
       },
       {

@@ -7,78 +7,69 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D1B79BC22ABA8EC00EB82EA /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79BB22ABA8EC00EB82EA /* PromiseKit */; };
-		5D1B79BE22ABAA0D00EB82EA /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79BD22ABAA0D00EB82EA /* PromiseKit */; };
-		5D1B79C122ABAA2300EB82EA /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 5D1B79C022ABAA2300EB82EA /* PMKFoundation */; };
-		5D3E852D21A0246C00FA946B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852C21A0246C00FA946B /* AppDelegate.swift */; };
-		5D3E852F21A0246C00FA946B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E852E21A0246C00FA946B /* ViewController.swift */; };
-		5D3E853221A0246C00FA946B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E853021A0246C00FA946B /* Main.storyboard */; };
-		5D3E853421A0246D00FA946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E853321A0246D00FA946B /* Assets.xcassets */; };
-		5D3E853721A0246D00FA946B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E853521A0246D00FA946B /* LaunchScreen.storyboard */; };
-		5D3E853C21A0246E00FA946B /* TermiWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5D3E853B21A0246E00FA946B /* TermiWatch WatchKit App.app */; };
-		5D3E854221A0246E00FA946B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E854021A0246E00FA946B /* Interface.storyboard */; };
-		5D3E854421A0246E00FA946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E854321A0246E00FA946B /* Assets.xcassets */; };
-		5D3E854B21A0246E00FA946B /* TermiWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		5D3E855021A0246E00FA946B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E854F21A0246E00FA946B /* InterfaceController.swift */; };
-		5D3E855221A0246E00FA946B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3E855121A0246E00FA946B /* ExtensionDelegate.swift */; };
-		5D3E855421A0246F00FA946B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E855321A0246F00FA946B /* Assets.xcassets */; };
-		5D3E856621A0271300FA946B /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */; };
-		5D50F69721AA972B00A9E754 /* BatteryInfoNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */; };
-		5D50F69921AAD6D400A9E754 /* TemperatureNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */; };
-		5D8BEA7323AEE0000096F314 /* Swizzle in Frameworks */ = {isa = PBXBuildFile; productRef = 5D8BEA7223AEE0000096F314 /* Swizzle */; };
-		5DB67F1F21A3E60C00AFA77A /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */; };
-		5DC87B2322ABBACD005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2222ABBACD005243D5 /* PMKHealthKit */; };
-		5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DC87B2422ABBAD5005243D5 /* PMKHealthKit */; };
-		5DD885B4237743DC003B1A55 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD885B3237743DC003B1A55 /* PMKCoreLocation */; };
-		5DD885B6237743E9003B1A55 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD885B5237743E9003B1A55 /* PMKCoreLocation */; };
+		5D083C37245F188200FBAC47 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D083C36245F188200FBAC47 /* PromiseKit */; };
+		5D083C3E245F2FE700FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3D245F2FE700FBAC47 /* HealthKit.framework */; };
+		5D083C40245F2FEF00FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3F245F2FEF00FBAC47 /* HealthKit.framework */; };
+		5DD84FA9245F118000E780A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FA8245F118000E780A4 /* AppDelegate.swift */; };
+		5DD84FAD245F118000E780A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FAC245F118000E780A4 /* ViewController.swift */; };
+		5DD84FB0245F118000E780A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FAE245F118000E780A4 /* Main.storyboard */; };
+		5DD84FB2245F118200E780A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FB1245F118200E780A4 /* Assets.xcassets */; };
+		5DD84FB5245F118300E780A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FB3245F118300E780A4 /* LaunchScreen.storyboard */; };
+		5DD84FBA245F118300E780A4 /* TermiWatch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5DD84FB9245F118300E780A4 /* TermiWatch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DD84FC0245F118300E780A4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FBE245F118300E780A4 /* Interface.storyboard */; };
+		5DD84FC2245F118400E780A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FC1245F118400E780A4 /* Assets.xcassets */; };
+		5DD84FC9245F118400E780A4 /* TermiWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5DD84FC8245F118400E780A4 /* TermiWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5DD84FCE245F118400E780A4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FCD245F118400E780A4 /* InterfaceController.swift */; };
+		5DD84FD0245F118400E780A4 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FCF245F118400E780A4 /* ExtensionDelegate.swift */; };
+		5DD84FD2245F118500E780A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FD1245F118500E780A4 /* Assets.xcassets */; };
+		5DD84FE5245F12D800E780A4 /* TemperatureNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE1245F12D700E780A4 /* TemperatureNotifier.swift */; };
+		5DD84FE6245F12D800E780A4 /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE2245F12D800E780A4 /* HealthKitUtils.swift */; };
+		5DD84FE7245F12D800E780A4 /* BatteryInfoNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE3245F12D800E780A4 /* BatteryInfoNotifier.swift */; };
+		5DD84FEC245F148000E780A4 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FEB245F148000E780A4 /* PromiseKit */; };
+		5DD84FEF245F14AF00E780A4 /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FEE245F14AF00E780A4 /* PMKFoundation */; };
+		5DD84FF2245F157A00E780A4 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF1245F157A00E780A4 /* PMKHealthKit */; };
+		5DD84FF5245F16E500E780A4 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF4245F16E500E780A4 /* PMKCoreLocation */; };
+		5DD84FF8245F172E00E780A4 /* Swizzle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF7245F172E00E780A4 /* Swizzle */; };
+		5DD84FFB245F176400E780A4 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FFA245F176400E780A4 /* PMKCoreLocation */; };
+		5DD84FFD245F176800E780A4 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FFC245F176800E780A4 /* PMKHealthKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D3E853D21A0246E00FA946B /* PBXContainerItemProxy */ = {
+		5DD84FBB245F118300E780A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D3E852121A0246C00FA946B /* Project object */;
+			containerPortal = 5DD84F9D245F118000E780A4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D3E853A21A0246E00FA946B;
-			remoteInfo = "TerminalWatchFace WatchKit App";
+			remoteGlobalIDString = 5DD84FB8245F118300E780A4;
+			remoteInfo = "TermiWatch WatchKit App";
 		};
-		5D3E854C21A0246E00FA946B /* PBXContainerItemProxy */ = {
+		5DD84FCA245F118400E780A4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 5D3E852121A0246C00FA946B /* Project object */;
+			containerPortal = 5DD84F9D245F118000E780A4 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5D3E854921A0246E00FA946B;
-			remoteInfo = "TerminalWatchFace WatchKit Extension";
+			remoteGlobalIDString = 5DD84FC7245F118400E780A4;
+			remoteInfo = "TermiWatch WatchKit Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		5D1B79C522ABAAED00EB82EA /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5D3E855B21A0246F00FA946B /* Embed App Extensions */ = {
+		5DD84FD9245F118500E780A4 /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				5D3E854B21A0246E00FA946B /* TermiWatch WatchKit Extension.appex in Embed App Extensions */,
+				5DD84FC9245F118400E780A4 /* TermiWatch WatchKit Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D3E855F21A0246F00FA946B /* Embed Watch Content */ = {
+		5DD84FDD245F118500E780A4 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				5D3E853C21A0246E00FA946B /* TermiWatch WatchKit App.app in Embed Watch Content */,
+				5DD84FBA245F118300E780A4 /* TermiWatch WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,120 +77,126 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5D3E852921A0246C00FA946B /* TermiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D3E852C21A0246C00FA946B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D3E852E21A0246C00FA946B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D3E853121A0246C00FA946B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5D3E853321A0246D00FA946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D3E853621A0246D00FA946B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5D3E853821A0246D00FA946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D3E853B21A0246E00FA946B /* TermiWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TermiWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D3E854121A0246E00FA946B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
-		5D3E854321A0246E00FA946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D3E854521A0246E00FA946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TermiWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D3E854F21A0246E00FA946B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
-		5D3E855121A0246E00FA946B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		5D3E855321A0246F00FA946B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D3E855521A0246F00FA946B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
-		5D3E856721A0288100FA946B /* TermiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TermiWatch.entitlements; sourceTree = "<group>"; };
-		5D3E856B21A0288700FA946B /* TermiWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "TermiWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryInfoNotifier.swift; sourceTree = "<group>"; };
-		5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureNotifier.swift; sourceTree = "<group>"; };
-		5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitUtils.swift; sourceTree = "<group>"; };
+		5D083C3D245F2FE700FBAC47 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		5D083C3F245F2FEF00FBAC47 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		5DD84FA5245F118000E780A4 /* TermiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TermiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD84FA8245F118000E780A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5DD84FAC245F118000E780A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5DD84FAF245F118000E780A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DD84FB1245F118200E780A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DD84FB4245F118300E780A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5DD84FB6245F118300E780A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD84FB9245F118300E780A4 /* TermiWatch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TermiWatch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD84FBF245F118300E780A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		5DD84FC1245F118400E780A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DD84FC3245F118400E780A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD84FC8245F118400E780A4 /* TermiWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TermiWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD84FCD245F118400E780A4 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		5DD84FCF245F118400E780A4 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		5DD84FD1245F118500E780A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5DD84FD3245F118500E780A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5DD84FE1245F12D700E780A4 /* TemperatureNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureNotifier.swift; sourceTree = "<group>"; };
+		5DD84FE2245F12D800E780A4 /* HealthKitUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitUtils.swift; sourceTree = "<group>"; };
+		5DD84FE3245F12D800E780A4 /* BatteryInfoNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryInfoNotifier.swift; sourceTree = "<group>"; };
+		5DD84FE4245F12D800E780A4 /* TermiWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "TermiWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		5DD84FE8245F132B00E780A4 /* TermiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TermiWatch.entitlements; sourceTree = "<group>"; };
+		5DD84FE9245F134E00E780A4 /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D3E852621A0246C00FA946B /* Frameworks */ = {
+		5DD84FA2245F118000E780A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1B79BC22ABA8EC00EB82EA /* PromiseKit in Frameworks */,
-				5DD885B4237743DC003B1A55 /* PMKCoreLocation in Frameworks */,
-				5DC87B2322ABBACD005243D5 /* PMKHealthKit in Frameworks */,
+				5DD84FF2245F157A00E780A4 /* PMKHealthKit in Frameworks */,
+				5D083C40245F2FEF00FBAC47 /* HealthKit.framework in Frameworks */,
+				5DD84FF5245F16E500E780A4 /* PMKCoreLocation in Frameworks */,
+				5DD84FEC245F148000E780A4 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D3E854721A0246E00FA946B /* Frameworks */ = {
+		5DD84FC5245F118400E780A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D1B79BE22ABAA0D00EB82EA /* PromiseKit in Frameworks */,
-				5DD885B6237743E9003B1A55 /* PMKCoreLocation in Frameworks */,
-				5DC87B2522ABBAD5005243D5 /* PMKHealthKit in Frameworks */,
-				5D1B79C122ABAA2300EB82EA /* PMKFoundation in Frameworks */,
-				5D8BEA7323AEE0000096F314 /* Swizzle in Frameworks */,
+				5D083C37245F188200FBAC47 /* PromiseKit in Frameworks */,
+				5DD84FEF245F14AF00E780A4 /* PMKFoundation in Frameworks */,
+				5DD84FFB245F176400E780A4 /* PMKCoreLocation in Frameworks */,
+				5D083C3E245F2FE700FBAC47 /* HealthKit.framework in Frameworks */,
+				5DD84FFD245F176800E780A4 /* PMKHealthKit in Frameworks */,
+				5DD84FF8245F172E00E780A4 /* Swizzle in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5D3E852021A0246C00FA946B = {
+		5DD84F9C245F118000E780A4 = {
 			isa = PBXGroup;
 			children = (
-				5D3E852B21A0246C00FA946B /* TermiWatch */,
-				5D3E853F21A0246E00FA946B /* TermiWatch WatchKit App */,
-				5D3E854E21A0246E00FA946B /* TermiWatch WatchKit Extension */,
-				5D3E852A21A0246C00FA946B /* Products */,
-				5DD885AF23773A3E003B1A55 /* Frameworks */,
+				5DD84FA7245F118000E780A4 /* TermiWatch */,
+				5DD84FBD245F118300E780A4 /* TermiWatch WatchKit App */,
+				5DD84FCC245F118400E780A4 /* TermiWatch WatchKit Extension */,
+				5DD84FA6245F118000E780A4 /* Products */,
+				5DD84FF9245F176400E780A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5D3E852A21A0246C00FA946B /* Products */ = {
+		5DD84FA6245F118000E780A4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D3E852921A0246C00FA946B /* TermiWatch.app */,
-				5D3E853B21A0246E00FA946B /* TermiWatch WatchKit App.app */,
-				5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */,
+				5DD84FA5245F118000E780A4 /* TermiWatch.app */,
+				5DD84FB9245F118300E780A4 /* TermiWatch WatchKit App.app */,
+				5DD84FC8245F118400E780A4 /* TermiWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D3E852B21A0246C00FA946B /* TermiWatch */ = {
+		5DD84FA7245F118000E780A4 /* TermiWatch */ = {
 			isa = PBXGroup;
 			children = (
-				5D3E856721A0288100FA946B /* TermiWatch.entitlements */,
-				5D3E852C21A0246C00FA946B /* AppDelegate.swift */,
-				5D3E852E21A0246C00FA946B /* ViewController.swift */,
-				5D3E853021A0246C00FA946B /* Main.storyboard */,
-				5D3E853321A0246D00FA946B /* Assets.xcassets */,
-				5D3E853521A0246D00FA946B /* LaunchScreen.storyboard */,
-				5D3E853821A0246D00FA946B /* Info.plist */,
+				5DD84FE8245F132B00E780A4 /* TermiWatch.entitlements */,
+				5DD84FA8245F118000E780A4 /* AppDelegate.swift */,
+				5DD84FAC245F118000E780A4 /* ViewController.swift */,
+				5DD84FAE245F118000E780A4 /* Main.storyboard */,
+				5DD84FB1245F118200E780A4 /* Assets.xcassets */,
+				5DD84FB3245F118300E780A4 /* LaunchScreen.storyboard */,
+				5DD84FB6245F118300E780A4 /* Info.plist */,
 			);
 			path = TermiWatch;
 			sourceTree = "<group>";
 		};
-		5D3E853F21A0246E00FA946B /* TermiWatch WatchKit App */ = {
+		5DD84FBD245F118300E780A4 /* TermiWatch WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				5D3E854021A0246E00FA946B /* Interface.storyboard */,
-				5D3E854321A0246E00FA946B /* Assets.xcassets */,
-				5D3E856521A026FD00FA946B /* SF-Mono-Regular.otf */,
-				5D3E854521A0246E00FA946B /* Info.plist */,
+				5DD84FBE245F118300E780A4 /* Interface.storyboard */,
+				5DD84FC1245F118400E780A4 /* Assets.xcassets */,
+				5DD84FE9245F134E00E780A4 /* SF-Mono-Regular.otf */,
+				5DD84FC3245F118400E780A4 /* Info.plist */,
 			);
 			path = "TermiWatch WatchKit App";
 			sourceTree = "<group>";
 		};
-		5D3E854E21A0246E00FA946B /* TermiWatch WatchKit Extension */ = {
+		5DD84FCC245F118400E780A4 /* TermiWatch WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				5D3E856B21A0288700FA946B /* TermiWatch WatchKit Extension.entitlements */,
-				5D50F69621AA972B00A9E754 /* BatteryInfoNotifier.swift */,
-				5D3E855121A0246E00FA946B /* ExtensionDelegate.swift */,
-				5DB67F1E21A3E60C00AFA77A /* HealthKitUtils.swift */,
-				5D3E854F21A0246E00FA946B /* InterfaceController.swift */,
-				5D50F69821AAD6D400A9E754 /* TemperatureNotifier.swift */,
-				5D3E855321A0246F00FA946B /* Assets.xcassets */,
-				5D3E855521A0246F00FA946B /* Info.plist */,
+				5DD84FE4245F12D800E780A4 /* TermiWatch WatchKit Extension.entitlements */,
+				5DD84FE3245F12D800E780A4 /* BatteryInfoNotifier.swift */,
+				5DD84FCF245F118400E780A4 /* ExtensionDelegate.swift */,
+				5DD84FE2245F12D800E780A4 /* HealthKitUtils.swift */,
+				5DD84FCD245F118400E780A4 /* InterfaceController.swift */,
+				5DD84FE1245F12D700E780A4 /* TemperatureNotifier.swift */,
+				5DD84FD1245F118500E780A4 /* Assets.xcassets */,
+				5DD84FD3245F118500E780A4 /* Info.plist */,
 			);
 			path = "TermiWatch WatchKit Extension";
 			sourceTree = "<group>";
 		};
-		5DD885AF23773A3E003B1A55 /* Frameworks */ = {
+		5DD84FF9245F176400E780A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D083C3F245F2FEF00FBAC47 /* HealthKit.framework */,
+				5D083C3D245F2FE700FBAC47 /* HealthKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,55 +204,54 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5D3E852821A0246C00FA946B /* TermiWatch */ = {
+		5DD84FA4245F118000E780A4 /* TermiWatch */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D3E856021A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch" */;
+			buildConfigurationList = 5DD84FDE245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch" */;
 			buildPhases = (
-				5D3E852521A0246C00FA946B /* Sources */,
-				5D3E852621A0246C00FA946B /* Frameworks */,
-				5D3E852721A0246C00FA946B /* Resources */,
-				5D3E855F21A0246F00FA946B /* Embed Watch Content */,
+				5DD84FA1245F118000E780A4 /* Sources */,
+				5DD84FA2245F118000E780A4 /* Frameworks */,
+				5DD84FA3245F118000E780A4 /* Resources */,
+				5DD84FDD245F118500E780A4 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D3E853E21A0246E00FA946B /* PBXTargetDependency */,
+				5DD84FBC245F118300E780A4 /* PBXTargetDependency */,
 			);
 			name = TermiWatch;
 			packageProductDependencies = (
-				5D1B79BB22ABA8EC00EB82EA /* PromiseKit */,
-				5DC87B2222ABBACD005243D5 /* PMKHealthKit */,
-				5DD885B3237743DC003B1A55 /* PMKCoreLocation */,
+				5DD84FEB245F148000E780A4 /* PromiseKit */,
+				5DD84FF1245F157A00E780A4 /* PMKHealthKit */,
+				5DD84FF4245F16E500E780A4 /* PMKCoreLocation */,
 			);
-			productName = TerminalWatchFace;
-			productReference = 5D3E852921A0246C00FA946B /* TermiWatch.app */;
+			productName = TermiWatch;
+			productReference = 5DD84FA5245F118000E780A4 /* TermiWatch.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5D3E853A21A0246E00FA946B /* TermiWatch WatchKit App */ = {
+		5DD84FB8245F118300E780A4 /* TermiWatch WatchKit App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D3E855C21A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit App" */;
+			buildConfigurationList = 5DD84FDA245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit App" */;
 			buildPhases = (
-				5D3E853921A0246E00FA946B /* Resources */,
-				5D3E855B21A0246F00FA946B /* Embed App Extensions */,
+				5DD84FB7245F118300E780A4 /* Resources */,
+				5DD84FD9245F118500E780A4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5D3E854D21A0246E00FA946B /* PBXTargetDependency */,
+				5DD84FCB245F118400E780A4 /* PBXTargetDependency */,
 			);
 			name = "TermiWatch WatchKit App";
-			productName = "TerminalWatchFace WatchKit App";
-			productReference = 5D3E853B21A0246E00FA946B /* TermiWatch WatchKit App.app */;
+			productName = "TermiWatch WatchKit App";
+			productReference = 5DD84FB9245F118300E780A4 /* TermiWatch WatchKit App.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
-		5D3E854921A0246E00FA946B /* TermiWatch WatchKit Extension */ = {
+		5DD84FC7245F118400E780A4 /* TermiWatch WatchKit Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D3E855821A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit Extension" */;
+			buildConfigurationList = 5DD84FD6245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit Extension" */;
 			buildPhases = (
-				5D3E854621A0246E00FA946B /* Sources */,
-				5D3E854721A0246E00FA946B /* Frameworks */,
-				5D3E854821A0246E00FA946B /* Resources */,
-				5D1B79C522ABAAED00EB82EA /* Embed Frameworks */,
+				5DD84FC4245F118400E780A4 /* Sources */,
+				5DD84FC5245F118400E780A4 /* Frameworks */,
+				5DD84FC6245F118400E780A4 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -263,48 +259,38 @@
 			);
 			name = "TermiWatch WatchKit Extension";
 			packageProductDependencies = (
-				5D1B79BD22ABAA0D00EB82EA /* PromiseKit */,
-				5D1B79C022ABAA2300EB82EA /* PMKFoundation */,
-				5DC87B2422ABBAD5005243D5 /* PMKHealthKit */,
-				5DD885B5237743E9003B1A55 /* PMKCoreLocation */,
-				5D8BEA7223AEE0000096F314 /* Swizzle */,
+				5DD84FEE245F14AF00E780A4 /* PMKFoundation */,
+				5DD84FF7245F172E00E780A4 /* Swizzle */,
+				5DD84FFA245F176400E780A4 /* PMKCoreLocation */,
+				5DD84FFC245F176800E780A4 /* PMKHealthKit */,
+				5D083C36245F188200FBAC47 /* PromiseKit */,
 			);
-			productName = "TerminalWatchFace WatchKit Extension";
-			productReference = 5D3E854A21A0246E00FA946B /* TermiWatch WatchKit Extension.appex */;
+			productName = "TermiWatch WatchKit Extension";
+			productReference = 5DD84FC8245F118400E780A4 /* TermiWatch WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D3E852121A0246C00FA946B /* Project object */ = {
+		5DD84F9D245F118000E780A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "Librecz Gábor";
 				TargetAttributes = {
-					5D3E852821A0246C00FA946B = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.HealthKit = {
-								enabled = 1;
-							};
-						};
+					5DD84FA4245F118000E780A4 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
-					5D3E853A21A0246E00FA946B = {
-						CreatedOnToolsVersion = 10.1;
+					5DD84FB8245F118300E780A4 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
-					5D3E854921A0246E00FA946B = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.HealthKit.watchos = {
-								enabled = 1;
-							};
-						};
+					5DD84FC7245F118400E780A4 = {
+						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
 			};
-			buildConfigurationList = 5D3E852421A0246C00FA946B /* Build configuration list for PBXProject "TermiWatch" */;
+			buildConfigurationList = 5DD84FA0245F118000E780A4 /* Build configuration list for PBXProject "TermiWatch" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -312,114 +298,113 @@
 				en,
 				Base,
 			);
-			mainGroup = 5D3E852021A0246C00FA946B;
+			mainGroup = 5DD84F9C245F118000E780A4;
 			packageReferences = (
-				5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */,
-				5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */,
-				5DD885B2237743DC003B1A55 /* XCRemoteSwiftPackageReference "CoreLocation" */,
-				5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */,
+				5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */,
+				5DD84FF0245F157A00E780A4 /* XCRemoteSwiftPackageReference "PMKHealthKit" */,
+				5DD84FF3245F16E500E780A4 /* XCRemoteSwiftPackageReference "CoreLocation" */,
+				5DD84FF6245F172E00E780A4 /* XCRemoteSwiftPackageReference "Swizzle" */,
 			);
-			productRefGroup = 5D3E852A21A0246C00FA946B /* Products */;
+			productRefGroup = 5DD84FA6245F118000E780A4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D3E852821A0246C00FA946B /* TermiWatch */,
-				5D3E853A21A0246E00FA946B /* TermiWatch WatchKit App */,
-				5D3E854921A0246E00FA946B /* TermiWatch WatchKit Extension */,
+				5DD84FA4245F118000E780A4 /* TermiWatch */,
+				5DD84FB8245F118300E780A4 /* TermiWatch WatchKit App */,
+				5DD84FC7245F118400E780A4 /* TermiWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D3E852721A0246C00FA946B /* Resources */ = {
+		5DD84FA3245F118000E780A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3E853721A0246D00FA946B /* LaunchScreen.storyboard in Resources */,
-				5D3E853421A0246D00FA946B /* Assets.xcassets in Resources */,
-				5D3E853221A0246C00FA946B /* Main.storyboard in Resources */,
+				5DD84FB5245F118300E780A4 /* LaunchScreen.storyboard in Resources */,
+				5DD84FB2245F118200E780A4 /* Assets.xcassets in Resources */,
+				5DD84FB0245F118000E780A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D3E853921A0246E00FA946B /* Resources */ = {
+		5DD84FB7245F118300E780A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3E856621A0271300FA946B /* SF-Mono-Regular.otf in Resources */,
-				5D3E854421A0246E00FA946B /* Assets.xcassets in Resources */,
-				5D3E854221A0246E00FA946B /* Interface.storyboard in Resources */,
+				5DD84FC2245F118400E780A4 /* Assets.xcassets in Resources */,
+				5DD84FC0245F118300E780A4 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D3E854821A0246E00FA946B /* Resources */ = {
+		5DD84FC6245F118400E780A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3E855421A0246F00FA946B /* Assets.xcassets in Resources */,
+				5DD84FD2245F118500E780A4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D3E852521A0246C00FA946B /* Sources */ = {
+		5DD84FA1245F118000E780A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D3E852F21A0246C00FA946B /* ViewController.swift in Sources */,
-				5D3E852D21A0246C00FA946B /* AppDelegate.swift in Sources */,
+				5DD84FAD245F118000E780A4 /* ViewController.swift in Sources */,
+				5DD84FA9245F118000E780A4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5D3E854621A0246E00FA946B /* Sources */ = {
+		5DD84FC4245F118400E780A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D50F69721AA972B00A9E754 /* BatteryInfoNotifier.swift in Sources */,
-				5D3E855221A0246E00FA946B /* ExtensionDelegate.swift in Sources */,
-				5DB67F1F21A3E60C00AFA77A /* HealthKitUtils.swift in Sources */,
-				5D50F69921AAD6D400A9E754 /* TemperatureNotifier.swift in Sources */,
-				5D3E855021A0246E00FA946B /* InterfaceController.swift in Sources */,
+				5DD84FD0245F118400E780A4 /* ExtensionDelegate.swift in Sources */,
+				5DD84FE5245F12D800E780A4 /* TemperatureNotifier.swift in Sources */,
+				5DD84FE7245F12D800E780A4 /* BatteryInfoNotifier.swift in Sources */,
+				5DD84FE6245F12D800E780A4 /* HealthKitUtils.swift in Sources */,
+				5DD84FCE245F118400E780A4 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5D3E853E21A0246E00FA946B /* PBXTargetDependency */ = {
+		5DD84FBC245F118300E780A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D3E853A21A0246E00FA946B /* TermiWatch WatchKit App */;
-			targetProxy = 5D3E853D21A0246E00FA946B /* PBXContainerItemProxy */;
+			target = 5DD84FB8245F118300E780A4 /* TermiWatch WatchKit App */;
+			targetProxy = 5DD84FBB245F118300E780A4 /* PBXContainerItemProxy */;
 		};
-		5D3E854D21A0246E00FA946B /* PBXTargetDependency */ = {
+		5DD84FCB245F118400E780A4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5D3E854921A0246E00FA946B /* TermiWatch WatchKit Extension */;
-			targetProxy = 5D3E854C21A0246E00FA946B /* PBXContainerItemProxy */;
+			target = 5DD84FC7245F118400E780A4 /* TermiWatch WatchKit Extension */;
+			targetProxy = 5DD84FCA245F118400E780A4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		5D3E853021A0246C00FA946B /* Main.storyboard */ = {
+		5DD84FAE245F118000E780A4 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D3E853121A0246C00FA946B /* Base */,
+				5DD84FAF245F118000E780A4 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5D3E853521A0246D00FA946B /* LaunchScreen.storyboard */ = {
+		5DD84FB3245F118300E780A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D3E853621A0246D00FA946B /* Base */,
+				5DD84FB4245F118300E780A4 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
-		5D3E854021A0246E00FA946B /* Interface.storyboard */ = {
+		5DD84FBE245F118300E780A4 /* Interface.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D3E854121A0246E00FA946B /* Base */,
+				5DD84FBF245F118300E780A4 /* Base */,
 			);
 			name = Interface.storyboard;
 			sourceTree = "<group>";
@@ -427,7 +412,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D3E855621A0246F00FA946B /* Debug */ = {
+		5DD84FD4245F118500E780A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -459,7 +444,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -478,7 +462,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -488,7 +472,7 @@
 			};
 			name = Debug;
 		};
-		5D3E855721A0246F00FA946B /* Release */ = {
+		5DD84FD5245F118500E780A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -520,7 +504,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -533,7 +516,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -543,17 +526,14 @@
 			};
 			name = Release;
 		};
-		5D3E855921A0246F00FA946B /* Debug */ = {
+		5DD84FD7245F118500E780A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "TermiWatch WatchKit Extension/TermiWatch WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -561,7 +541,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -570,17 +549,14 @@
 			};
 			name = Debug;
 		};
-		5D3E855A21A0246F00FA946B /* Release */ = {
+		5DD84FD8245F118500E780A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_ENTITLEMENTS = "TermiWatch WatchKit Extension/TermiWatch WatchKit Extension.entitlements";
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit Extension/Info.plist";
+				INFOPLIST_FILE = "TermiWatch WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -588,7 +564,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -597,20 +572,17 @@
 			};
 			name = Release;
 		};
-		5D3E855D21A0246F00FA946B /* Debug */ = {
+		5DD84FDB245F118500E780A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				IBSC_MODULE = TerminalWatchFace_WatchKit_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit App/Info.plist";
+				IBSC_MODULE = TermiWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TermiWatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -619,20 +591,17 @@
 			};
 			name = Debug;
 		};
-		5D3E855E21A0246F00FA946B /* Release */ = {
+		5DD84FDC245F118500E780A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				IBSC_MODULE = TerminalWatchFace_WatchKit_Extension;
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch WatchKit App/Info.plist";
+				IBSC_MODULE = TermiWatch_WatchKit_Extension;
+				INFOPLIST_FILE = "TermiWatch WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -641,47 +610,41 @@
 			};
 			name = Release;
 		};
-		5D3E856121A0246F00FA946B /* Debug */ = {
+		5DD84FDF245F118500E780A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TermiWatch/TermiWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch/Info.plist";
+				INFOPLIST_FILE = TermiWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		5D3E856221A0246F00FA946B /* Release */ = {
+		5DD84FE0245F118500E780A4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = TermiWatch/TermiWatch.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = C89KNBM28S;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/TermiWatch/Info.plist";
+				INFOPLIST_FILE = TermiWatch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.kuglee.TermiWatch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -690,38 +653,38 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D3E852421A0246C00FA946B /* Build configuration list for PBXProject "TermiWatch" */ = {
+		5DD84FA0245F118000E780A4 /* Build configuration list for PBXProject "TermiWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D3E855621A0246F00FA946B /* Debug */,
-				5D3E855721A0246F00FA946B /* Release */,
+				5DD84FD4245F118500E780A4 /* Debug */,
+				5DD84FD5245F118500E780A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D3E855821A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit Extension" */ = {
+		5DD84FD6245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D3E855921A0246F00FA946B /* Debug */,
-				5D3E855A21A0246F00FA946B /* Release */,
+				5DD84FD7245F118500E780A4 /* Debug */,
+				5DD84FD8245F118500E780A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D3E855C21A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit App" */ = {
+		5DD84FDA245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D3E855D21A0246F00FA946B /* Debug */,
-				5D3E855E21A0246F00FA946B /* Release */,
+				5DD84FDB245F118500E780A4 /* Debug */,
+				5DD84FDC245F118500E780A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D3E856021A0246F00FA946B /* Build configuration list for PBXNativeTarget "TermiWatch" */ = {
+		5DD84FDE245F118500E780A4 /* Build configuration list for PBXNativeTarget "TermiWatch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D3E856121A0246F00FA946B /* Debug */,
-				5D3E856221A0246F00FA946B /* Release */,
+				5DD84FDF245F118500E780A4 /* Debug */,
+				5DD84FE0245F118500E780A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -729,31 +692,23 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+		5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mxcl/PromiseKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 6.8.4;
+				minimumVersion = 6.13.1;
 			};
 		};
-		5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */ = {
+		5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PromiseKit/Foundation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.3.2;
+				minimumVersion = 3.3.4;
 			};
 		};
-		5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kuglee/Swizzle";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.1;
-			};
-		};
-		5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */ = {
+		5DD84FF0245F157A00E780A4 /* XCRemoteSwiftPackageReference "PMKHealthKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kuglee/PMKHealthKit";
 			requirement = {
@@ -761,58 +716,66 @@
 				kind = branch;
 			};
 		};
-		5DD885B2237743DC003B1A55 /* XCRemoteSwiftPackageReference "CoreLocation" */ = {
+		5DD84FF3245F16E500E780A4 /* XCRemoteSwiftPackageReference "CoreLocation" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kuglee/CoreLocation";
+			repositoryURL = "https://github.com/PromiseKit/CoreLocation";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.0;
+				minimumVersion = 3.1.1;
+			};
+		};
+		5DD84FF6245F172E00E780A4 /* XCRemoteSwiftPackageReference "Swizzle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kuglee/Swizzle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5D1B79BB22ABA8EC00EB82EA /* PromiseKit */ = {
+		5D083C36245F188200FBAC47 /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			package = 5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
 		};
-		5D1B79BD22ABAA0D00EB82EA /* PromiseKit */ = {
+		5DD84FEB245F148000E780A4 /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D1B79BA22ABA8EC00EB82EA /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			package = 5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
 		};
-		5D1B79C022ABAA2300EB82EA /* PMKFoundation */ = {
+		5DD84FEE245F14AF00E780A4 /* PMKFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D1B79BF22ABAA2300EB82EA /* XCRemoteSwiftPackageReference "Foundation" */;
+			package = 5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */;
 			productName = PMKFoundation;
 		};
-		5D8BEA7223AEE0000096F314 /* Swizzle */ = {
+		5DD84FF1245F157A00E780A4 /* PMKHealthKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5D8BEA6F23AEDFE60096F314 /* XCRemoteSwiftPackageReference "Swizzle" */;
+			package = 5DD84FF0245F157A00E780A4 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
+			productName = PMKHealthKit;
+		};
+		5DD84FF4245F16E500E780A4 /* PMKCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DD84FF3245F16E500E780A4 /* XCRemoteSwiftPackageReference "CoreLocation" */;
+			productName = PMKCoreLocation;
+		};
+		5DD84FF7245F172E00E780A4 /* Swizzle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5DD84FF6245F172E00E780A4 /* XCRemoteSwiftPackageReference "Swizzle" */;
 			productName = Swizzle;
 		};
-		5DC87B2222ABBACD005243D5 /* PMKHealthKit */ = {
+		5DD84FFA245F176400E780A4 /* PMKCoreLocation */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
-			productName = PMKHealthKit;
-		};
-		5DC87B2422ABBAD5005243D5 /* PMKHealthKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DC87B2122ABBACD005243D5 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
-			productName = PMKHealthKit;
-		};
-		5DD885B3237743DC003B1A55 /* PMKCoreLocation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DD885B2237743DC003B1A55 /* XCRemoteSwiftPackageReference "CoreLocation" */;
+			package = 5DD84FF3245F16E500E780A4 /* XCRemoteSwiftPackageReference "CoreLocation" */;
 			productName = PMKCoreLocation;
 		};
-		5DD885B5237743E9003B1A55 /* PMKCoreLocation */ = {
+		5DD84FFC245F176800E780A4 /* PMKHealthKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5DD885B2237743DC003B1A55 /* XCRemoteSwiftPackageReference "CoreLocation" */;
-			productName = PMKCoreLocation;
+			package = 5DD84FF0245F157A00E780A4 /* XCRemoteSwiftPackageReference "PMKHealthKit" */;
+			productName = PMKHealthKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 5D3E852121A0246C00FA946B /* Project object */;
+	rootObject = 5DD84F9D245F118000E780A4 /* Project object */;
 }
