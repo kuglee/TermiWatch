@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5D083C37245F188200FBAC47 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5D083C36245F188200FBAC47 /* PromiseKit */; };
 		5D083C3E245F2FE700FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3D245F2FE700FBAC47 /* HealthKit.framework */; };
 		5D083C40245F2FEF00FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3F245F2FEF00FBAC47 /* HealthKit.framework */; };
 		5DD84FA9245F118000E780A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FA8245F118000E780A4 /* AppDelegate.swift */; };
@@ -25,7 +24,6 @@
 		5DD84FE5245F12D800E780A4 /* TemperatureNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE1245F12D700E780A4 /* TemperatureNotifier.swift */; };
 		5DD84FE6245F12D800E780A4 /* HealthKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE2245F12D800E780A4 /* HealthKitUtils.swift */; };
 		5DD84FE7245F12D800E780A4 /* BatteryInfoNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FE3245F12D800E780A4 /* BatteryInfoNotifier.swift */; };
-		5DD84FEC245F148000E780A4 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FEB245F148000E780A4 /* PromiseKit */; };
 		5DD84FEF245F14AF00E780A4 /* PMKFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FEE245F14AF00E780A4 /* PMKFoundation */; };
 		5DD84FF2245F157A00E780A4 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF1245F157A00E780A4 /* PMKHealthKit */; };
 		5DD84FF5245F16E500E780A4 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF4245F16E500E780A4 /* PMKCoreLocation */; };
@@ -111,7 +109,6 @@
 				5DD84FF2245F157A00E780A4 /* PMKHealthKit in Frameworks */,
 				5D083C40245F2FEF00FBAC47 /* HealthKit.framework in Frameworks */,
 				5DD84FF5245F16E500E780A4 /* PMKCoreLocation in Frameworks */,
-				5DD84FEC245F148000E780A4 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D083C37245F188200FBAC47 /* PromiseKit in Frameworks */,
 				5DD84FEF245F14AF00E780A4 /* PMKFoundation in Frameworks */,
 				5DD84FFB245F176400E780A4 /* PMKCoreLocation in Frameworks */,
 				5D083C3E245F2FE700FBAC47 /* HealthKit.framework in Frameworks */,
@@ -220,7 +216,6 @@
 			);
 			name = TermiWatch;
 			packageProductDependencies = (
-				5DD84FEB245F148000E780A4 /* PromiseKit */,
 				5DD84FF1245F157A00E780A4 /* PMKHealthKit */,
 				5DD84FF4245F16E500E780A4 /* PMKCoreLocation */,
 			);
@@ -263,7 +258,6 @@
 				5DD84FF7245F172E00E780A4 /* Swizzle */,
 				5DD84FFA245F176400E780A4 /* PMKCoreLocation */,
 				5DD84FFC245F176800E780A4 /* PMKHealthKit */,
-				5D083C36245F188200FBAC47 /* PromiseKit */,
 			);
 			productName = "TermiWatch WatchKit Extension";
 			productReference = 5DD84FC8245F118400E780A4 /* TermiWatch WatchKit Extension.appex */;
@@ -300,7 +294,6 @@
 			);
 			mainGroup = 5DD84F9C245F118000E780A4;
 			packageReferences = (
-				5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 				5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */,
 				5DD84FF0245F157A00E780A4 /* XCRemoteSwiftPackageReference "PMKHealthKit" */,
 				5DD84FF3245F16E500E780A4 /* XCRemoteSwiftPackageReference "CoreLocation" */,
@@ -692,14 +685,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mxcl/PromiseKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 6.13.1;
-			};
-		};
 		5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/PromiseKit/Foundation";
@@ -735,16 +720,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5D083C36245F188200FBAC47 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */;
-			productName = PromiseKit;
-		};
-		5DD84FEB245F148000E780A4 /* PromiseKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5DD84FEA245F148000E780A4 /* XCRemoteSwiftPackageReference "PromiseKit" */;
-			productName = PromiseKit;
-		};
 		5DD84FEE245F14AF00E780A4 /* PMKFoundation */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5DD84FED245F14AF00E780A4 /* XCRemoteSwiftPackageReference "Foundation" */;

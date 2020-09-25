@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
+               BlueprintIdentifier = "5DD84FB8245F118300E780A4"
                BuildableName = "TermiWatch WatchKit App.app"
                BlueprintName = "TermiWatch WatchKit App"
                ReferencedContainer = "container:TermiWatch.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D3E852821A0246C00FA946B"
+               BlueprintIdentifier = "5DD84FA4245F118000E780A4"
                BuildableName = "TermiWatch.app"
                BlueprintName = "TermiWatch"
                ReferencedContainer = "container:TermiWatch.xcodeproj">
@@ -43,17 +43,6 @@
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
-            BuildableName = "TermiWatch WatchKit App.app"
-            BlueprintName = "TermiWatch WatchKit App"
-            ReferencedContainer = "container:TermiWatch.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -65,29 +54,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/TerminalWatchFace WatchKit App">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
+            BlueprintIdentifier = "5DD84FB8245F118300E780A4"
             BuildableName = "TermiWatch WatchKit App.app"
             BlueprintName = "TermiWatch WatchKit App"
             ReferencedContainer = "container:TermiWatch.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
-            BuildableName = "TermiWatch WatchKit App.app"
-            BlueprintName = "TermiWatch WatchKit App"
-            ReferencedContainer = "container:TermiWatch.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      </BuildableProductRunnable>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
@@ -99,27 +75,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <RemoteRunnable
-         runnableDebuggingMode = "2"
-         BundleIdentifier = "com.apple.Carousel"
-         RemotePath = "/TerminalWatchFace WatchKit App">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
+            BlueprintIdentifier = "5DD84FB8245F118300E780A4"
             BuildableName = "TermiWatch WatchKit App.app"
             BlueprintName = "TermiWatch WatchKit App"
             ReferencedContainer = "container:TermiWatch.xcodeproj">
          </BuildableReference>
-      </RemoteRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E853A21A0246E00FA946B"
-            BuildableName = "TermiWatch WatchKit App.app"
-            BlueprintName = "TermiWatch WatchKit App"
-            ReferencedContainer = "container:TermiWatch.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
