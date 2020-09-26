@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5D083C3E245F2FE700FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3D245F2FE700FBAC47 /* HealthKit.framework */; };
 		5D083C40245F2FEF00FBAC47 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D083C3F245F2FEF00FBAC47 /* HealthKit.framework */; };
+		5DD33A3B251F439000FBC5FE /* SF-Mono-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FE9245F134E00E780A4 /* SF-Mono-Regular.otf */; };
 		5DD84FA9245F118000E780A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FA8245F118000E780A4 /* AppDelegate.swift */; };
 		5DD84FAD245F118000E780A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD84FAC245F118000E780A4 /* ViewController.swift */; };
 		5DD84FB0245F118000E780A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DD84FAE245F118000E780A4 /* Main.storyboard */; };
@@ -326,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5DD84FC2245F118400E780A4 /* Assets.xcassets in Resources */,
+				5DD33A3B251F439000FBC5FE /* SF-Mono-Regular.otf in Resources */,
 				5DD84FC0245F118300E780A4 /* Interface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
