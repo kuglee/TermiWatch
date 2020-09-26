@@ -8,6 +8,7 @@ import WatchKit
 
 // MARK: - UIKit stubs
 
+// watchOS 5
 private extension NSObject {
   @objc class func sharedApplication() -> NSObject? { fatalError() }
   @objc func keyWindow() -> NSObject? { fatalError() }
@@ -18,6 +19,12 @@ private extension NSObject {
   @objc func timeLabel() -> NSObject? { fatalError() }
   @objc func layer() -> NSObject? { fatalError() }
   @objc func setOpacity(_ opacity: CDouble) { fatalError() }
+}
+
+// watchOS 6 or later
+private extension NSObject {
+  @objc class func sharedPUICApplication() -> NSObject? { fatalError() }
+  @objc func _setStatusBarTimeHidden(_ hidden: Bool, animated: Bool, completion: NSObject? = nil) { fatalError() }
 }
 
 // MARK: - CLKTimeFormatter
@@ -47,11 +54,11 @@ func getSPFullScreenView() -> NSObject? {
   return nil
 }
 
-func hideDefaultTimeLabel() {
+func hideDefaultTimeLabelWatchOS5() {
   getSPFullScreenView()?.timeLabel()?.layer()?.setOpacity(0)
 }
 
-func swizzleDefaultTime() {
+func hideDefaultTimeLabelWatchOS6() {
   try! swizzleInstanceMethodObjcString(
     of: "CLKTimeFormatter",
     from: "timeText",
@@ -59,11 +66,18 @@ func swizzleDefaultTime() {
   )
 }
 
+func hideDefaultTimeLabelWatchOS7() {
+  let application = NSClassFromString("PUICApplication") as? NSObject.Type
+  application?.sharedPUICApplication()?._setStatusBarTimeHidden(true, animated: false)
+}
+
 var hideTimeOnce: () -> Void = {
-  if #available(watchOS 6, *) {
-    swizzleDefaultTime()
+  if #available(watchOS 7, *) {
+    hideDefaultTimeLabelWatchOS7()
+  } else if #available(watchOS 6, *) {
+    hideDefaultTimeLabelWatchOS6()
   } else {
-    hideDefaultTimeLabel()
+    hideDefaultTimeLabelWatchOS5()
   }
 
   return {}
