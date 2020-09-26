@@ -33,7 +33,7 @@ For devices running watchOS 5 or higher.
 
 ## Configuring the project
   1. Download the latest version:
-  - **Xcode 11**: https://github.com/kuglee/TermiWatch/archive/master.zip
+  - **Xcode 11 or later**: https://github.com/kuglee/TermiWatch/archive/master.zip
   - Xcode 10.2: https://github.com/kuglee/TermiWatch/releases/latest  
   - Xcode 10.1 and older: https://github.com/kuglee/TermiWatch/releases/1.1.1
   1. Open **TermiWatch.xcodeproj** in **Xcode**.
