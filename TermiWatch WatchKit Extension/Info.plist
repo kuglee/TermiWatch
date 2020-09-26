@@ -35,7 +35,7 @@
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location data will be used to display weather data. </string>
 	<key>OpenWeatherMapAPIKey</key>
-	<string>f5c7fc0b3bcb19917ec924af16da2300</string>
+	<string>8d30dae09830ab2917caface6d6cf1c5</string>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
 </dict>
