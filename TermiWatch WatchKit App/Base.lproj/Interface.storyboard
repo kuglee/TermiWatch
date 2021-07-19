@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch40" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="18122" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch40"/>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="18022"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="SF-Mono-Regular.otf">
@@ -263,9 +261,12 @@
                         <outlet property="heartRateLabel" destination="CJN-qq-25o" id="nC7-TA-ixI"/>
                         <outlet property="stepsLabel" destination="wW6-sr-Wl2" id="yx2-fB-bIa"/>
                         <outlet property="temperatureLabel" destination="SKt-9Q-acu" id="dPq-Hc-1qI"/>
+                        <outlet property="userHostLabel" destination="V36-NY-x0W" id="c4z-N2-WvU"/>
+                        <outlet property="userHostLabelNow" destination="bcc-Ix-MUn" id="DgK-iu-bPl"/>
                     </connections>
                 </controller>
             </objects>
+            <point key="canvasLocation" x="94" y="133"/>
         </scene>
     </scenes>
 </document>

@@ -5,6 +5,7 @@ import PMKHealthKit
 import PromiseKit
 import Swizzle
 import WatchKit
+import WatchConnectivity
 
 // MARK: - UIKit stubs
 
@@ -172,14 +173,21 @@ func batteryIndicatorString(percent: UInt) -> String {
 }
 
 class InterfaceController: WKInterfaceController {
+  @IBOutlet weak var userHostLabelNow: WKInterfaceLabel!
   @IBOutlet var batteryLabel: WKInterfaceLabel!
   @IBOutlet var activityLabel: WKInterfaceLabel!
   @IBOutlet var stepsLabel: WKInterfaceLabel!
   @IBOutlet var heartRateLabel: WKInterfaceLabel!
   @IBOutlet var temperatureLabel: WKInterfaceLabel!
+  @IBOutlet weak var userHostLabel: WKInterfaceLabel!
+  
+  let session = WCSession.default
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
+    
+    session.delegate = self
+    session.activate()
 
     // MARK: - Temperature
 
@@ -299,5 +307,19 @@ class InterfaceController: WKInterfaceController {
     // Hack to make the digital time overlay disappear
     // from: https://github.com/steventroughtonsmith/SpriteKitWatchFace
     hideTimeOnce()
+  }
+}
+
+extension InterfaceController: WCSessionDelegate {
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    
+  }
+
+  func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+    let username = message["username"] as? String ?? "user"
+    let hostname = message["hostname"] as? String ?? "watch"
+    
+    self.userHostLabelNow.setText(username + "@" + hostname + ":~ $ now")
+    self.userHostLabel.setText(username + "@" + hostname + ":~ $")
   }
 }
