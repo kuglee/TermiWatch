@@ -21,16 +21,16 @@
                                 <rect key="frame" x="16" y="112" width="358" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtX-CG-hix">
-                                        <rect key="frame" x="20" y="8" width="79" height="20"/>
+                                        <rect key="frame" x="20" y="8" width="100" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="92q-id-i2N" userLabel="Username Textfield">
-                                        <rect key="frame" x="117" y="0.0" width="200" height="36"/>
+                                        <rect key="frame" x="137" y="0.0" width="180" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="1s3-Rm-9h4"/>
+                                            <constraint firstAttribute="width" constant="180" id="1s3-Rm-9h4"/>
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -43,6 +43,7 @@
                                     <constraint firstAttribute="trailing" secondItem="92q-id-i2N" secondAttribute="trailing" constant="41" id="6en-Tw-nKR"/>
                                     <constraint firstItem="MtX-CG-hix" firstAttribute="centerY" secondItem="rv9-Hp-gMf" secondAttribute="centerY" id="Aob-56-gHk"/>
                                     <constraint firstItem="MtX-CG-hix" firstAttribute="bottom" secondItem="rv9-Hp-gMf" secondAttribute="bottomMargin" id="hYQ-gK-D6R"/>
+                                    <constraint firstItem="92q-id-i2N" firstAttribute="leading" secondItem="MtX-CG-hix" secondAttribute="trailing" constant="17" id="iWz-zt-aFG"/>
                                     <constraint firstAttribute="bottom" secondItem="MtX-CG-hix" secondAttribute="bottom" constant="8" id="kH5-rx-1Nx"/>
                                     <constraint firstItem="92q-id-i2N" firstAttribute="centerY" secondItem="rv9-Hp-gMf" secondAttribute="centerY" id="llb-lE-lfI"/>
                                     <constraint firstItem="92q-id-i2N" firstAttribute="top" secondItem="rv9-Hp-gMf" secondAttribute="top" id="onc-KQ-ZJH"/>
@@ -54,16 +55,16 @@
                                 <rect key="frame" x="16" y="178" width="358" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hostname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iw5-XX-YD9" userLabel="Hostname">
-                                        <rect key="frame" x="20" y="8" width="79" height="20"/>
+                                        <rect key="frame" x="20" y="8" width="100" height="20"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcz-Bd-98X" userLabel="Hostname Textfield">
-                                        <rect key="frame" x="117" y="0.0" width="200" height="36"/>
+                                        <rect key="frame" x="137" y="0.0" width="180" height="36"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="200" id="af7-Fr-iX1"/>
+                                            <constraint firstAttribute="width" constant="180" id="af7-Fr-iX1"/>
                                         </constraints>
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -73,6 +74,7 @@
                                 <constraints>
                                     <constraint firstItem="Iw5-XX-YD9" firstAttribute="centerY" secondItem="m2G-Ri-0US" secondAttribute="centerY" id="6hw-bH-zHD"/>
                                     <constraint firstItem="Iw5-XX-YD9" firstAttribute="leading" secondItem="m2G-Ri-0US" secondAttribute="leading" constant="20" id="Da5-Iq-kow"/>
+                                    <constraint firstItem="tcz-Bd-98X" firstAttribute="leading" secondItem="Iw5-XX-YD9" secondAttribute="trailing" constant="17" id="JCW-sM-Xa4"/>
                                     <constraint firstItem="tcz-Bd-98X" firstAttribute="top" secondItem="m2G-Ri-0US" secondAttribute="top" id="KZI-kI-zOh"/>
                                     <constraint firstItem="Iw5-XX-YD9" firstAttribute="bottom" secondItem="m2G-Ri-0US" secondAttribute="bottomMargin" id="LUg-Eq-Ozb"/>
                                     <constraint firstItem="Iw5-XX-YD9" firstAttribute="top" secondItem="m2G-Ri-0US" secondAttribute="top" constant="8" id="Nzc-LM-Ihe"/>
@@ -86,25 +88,28 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uS-7V-4OC" userLabel="System">
                                 <rect key="frame" x="40" y="257" width="310" height="150"/>
                                 <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max total Characters for username and hostname: 9" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-Ti-PCl" userLabel="Warning">
+                                        <rect key="frame" x="8" y="54" width="294" height="63"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rAw-7W-Tg5">
-                                        <rect key="frame" x="97" y="16" width="116" height="30"/>
+                                        <rect key="frame" x="95" y="16" width="116" height="40"/>
                                         <state key="normal" title="Update to Watch"/>
                                         <connections>
                                             <action selector="updateConfigToWatch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yMB-SV-X1R"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Max Characters: {Username: 4}, {Hostname: 5}" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-Ti-PCl" userLabel="Warning">
-                                        <rect key="frame" x="8" y="54" width="294" height="63"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="rAw-7W-Tg5" firstAttribute="centerY" secondItem="4uS-7V-4OC" secondAttribute="centerY" constant="-44" id="NLZ-rW-OoB"/>
+                                    <constraint firstItem="TGC-Ti-PCl" firstAttribute="leading" secondItem="4uS-7V-4OC" secondAttribute="leadingMargin" id="EFo-nK-ioY"/>
+                                    <constraint firstItem="TGC-Ti-PCl" firstAttribute="centerX" secondItem="rAw-7W-Tg5" secondAttribute="centerX" constant="2" id="JNx-tB-x8S"/>
+                                    <constraint firstItem="rAw-7W-Tg5" firstAttribute="centerY" secondItem="4uS-7V-4OC" secondAttribute="centerY" constant="-39" id="NLZ-rW-OoB"/>
+                                    <constraint firstItem="TGC-Ti-PCl" firstAttribute="top" secondItem="rAw-7W-Tg5" secondAttribute="bottom" constant="-2" id="agd-yO-fc6"/>
                                     <constraint firstItem="rAw-7W-Tg5" firstAttribute="top" secondItem="4uS-7V-4OC" secondAttribute="top" constant="16" id="cmN-3Z-YhM"/>
-                                    <constraint firstItem="rAw-7W-Tg5" firstAttribute="centerX" secondItem="4uS-7V-4OC" secondAttribute="centerX" id="pRD-sM-Kj8"/>
+                                    <constraint firstAttribute="bottom" secondItem="TGC-Ti-PCl" secondAttribute="bottom" constant="33" id="enV-yr-bmG"/>
+                                    <constraint firstItem="rAw-7W-Tg5" firstAttribute="centerX" secondItem="4uS-7V-4OC" secondAttribute="centerX" constant="-2" id="pRD-sM-Kj8"/>
                                 </constraints>
                             </view>
                         </subviews>

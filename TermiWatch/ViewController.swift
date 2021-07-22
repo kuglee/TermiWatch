@@ -61,7 +61,7 @@ class ViewController: UIViewController {
   
   func isInputLengthValid(username: String, hostname: String) -> Bool {
     self.warningLabel.isHidden = true
-    if (username.count > 4 || hostname.count > 5) {
+    if (username.count + hostname.count > 9) {
       self.warningLabel.isHidden = false
       return false
     }
