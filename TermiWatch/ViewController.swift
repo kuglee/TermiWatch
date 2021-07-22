@@ -28,6 +28,9 @@ class ViewController: UIViewController {
     self.warningLabel.isHidden = true
     
     createWCSession()
+    
+    let dismissalTap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+    view.addGestureRecognizer(dismissalTap)
 
     firstly {
       CLLocationManager.requestAuthorization()
@@ -67,6 +70,11 @@ class ViewController: UIViewController {
     }
 
     return true
+  }
+  
+  @objc func dismissKeyboard() {
+      // Causes the view (or one of its embedded text fields) to resign the first responder status.
+      view.endEditing(true)
   }
 }
 

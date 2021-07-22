@@ -86,7 +86,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4uS-7V-4OC" userLabel="System">
-                                <rect key="frame" x="40" y="257" width="310" height="150"/>
+                                <rect key="frame" x="40" y="500" width="310" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max total Characters for username and hostname: 9" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-Ti-PCl" userLabel="Warning">
                                         <rect key="frame" x="8" y="54" width="294" height="63"/>
@@ -116,7 +116,7 @@
                         <viewLayoutGuide key="safeArea" id="Uee-0j-aNJ"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="4uS-7V-4OC" secondAttribute="bottom" constant="403" id="2xP-gq-xRL"/>
+                            <constraint firstItem="Uee-0j-aNJ" firstAttribute="bottom" secondItem="4uS-7V-4OC" secondAttribute="bottom" constant="160" id="2xP-gq-xRL"/>
                             <constraint firstItem="m2G-Ri-0US" firstAttribute="leading" secondItem="rv9-Hp-gMf" secondAttribute="leading" id="Fgn-Y8-e6c"/>
                             <constraint firstItem="Uee-0j-aNJ" firstAttribute="trailing" secondItem="4uS-7V-4OC" secondAttribute="trailing" constant="40" id="QVw-WP-Iy5"/>
                             <constraint firstItem="4uS-7V-4OC" firstAttribute="leading" secondItem="Uee-0j-aNJ" secondAttribute="leading" constant="40" id="WPO-MU-1jO"/>
@@ -125,7 +125,7 @@
                             <constraint firstItem="rv9-Hp-gMf" firstAttribute="top" secondItem="Uee-0j-aNJ" secondAttribute="top" constant="68" id="oYl-Cs-Bxf"/>
                             <constraint firstItem="m2G-Ri-0US" firstAttribute="trailing" secondItem="rv9-Hp-gMf" secondAttribute="trailing" id="ovx-cb-zVE"/>
                             <constraint firstItem="m2G-Ri-0US" firstAttribute="top" secondItem="rv9-Hp-gMf" secondAttribute="bottom" constant="30" id="uNg-pA-Oto"/>
-                            <constraint firstItem="4uS-7V-4OC" firstAttribute="top" secondItem="m2G-Ri-0US" secondAttribute="bottom" constant="43" id="zjA-Qj-SW4"/>
+                            <constraint firstItem="4uS-7V-4OC" firstAttribute="top" secondItem="m2G-Ri-0US" secondAttribute="bottom" constant="286" id="zjA-Qj-SW4"/>
                         </constraints>
                     </view>
                     <connections>
