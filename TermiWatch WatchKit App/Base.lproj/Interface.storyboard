@@ -105,7 +105,36 @@
                                             </variation>
                                         </label>
                                         <label alignment="left" text="--" id="SKt-9Q-acu" userLabel="Temperature Label">
-                                            <color key="textColor" red="0.99215686274509807" green="0.5607843137254902" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
+                                            </variation>
+                                            <variation key="device=watch44mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" hidden="YES" spacing="0.0" id="ArV-nc-Hze" userLabel="Calendar Group">
+                                    <items>
+                                        <label alignment="left" text="[CALR]" textAlignment="left" id="lbG-IO-C71" userLabel="[CALR]">
+                                            <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
+                                            <variation key="device=watch38mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
+                                            </variation>
+                                            <variation key="device=watch42mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="13"/>
+                                            </variation>
+                                            <variation key="device=watch44mm">
+                                                <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                        <label alignment="left" text="--" id="ivt-7u-6PD" userLabel="Calendar Label">
+                                            <color key="textColor" red="0.99215686270000003" green="0.56078431370000004" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="14"/>
                                             <variation key="device=watch38mm">
                                                 <fontDescription key="font" name="SFMono-Regular" family="SF Mono" pointSize="12"/>
@@ -256,10 +285,17 @@
                     </items>
                     <edgeInsets key="margins" left="1" right="1" top="0.0" bottom="0.0"/>
                     <connections>
+                        <outlet property="activityGroup" destination="vaI-MQ-EJU" id="13j-Bp-v9n"/>
                         <outlet property="activityLabel" destination="Ffh-bh-IK7" id="yh4-nR-EXG"/>
+                        <outlet property="batteryGroup" destination="d1R-FW-N0Q" id="Ahz-0I-g20"/>
                         <outlet property="batteryLabel" destination="3dH-MF-gwo" id="1uW-7r-XDy"/>
+                        <outlet property="calendarGroup" destination="ArV-nc-Hze" id="JJX-rZ-2uX"/>
+                        <outlet property="calendarLabel" destination="ivt-7u-6PD" id="uCt-uQ-6eA"/>
+                        <outlet property="heartRateGroup" destination="7QQ-dm-023" id="ZF3-qv-H47"/>
                         <outlet property="heartRateLabel" destination="CJN-qq-25o" id="nC7-TA-ixI"/>
+                        <outlet property="stepsGroup" destination="S8h-WK-zOs" id="eGn-OO-I6C"/>
                         <outlet property="stepsLabel" destination="wW6-sr-Wl2" id="yx2-fB-bIa"/>
+                        <outlet property="temperatureGroup" destination="lYl-fG-xTG" id="0CZ-Hm-bPV"/>
                         <outlet property="temperatureLabel" destination="SKt-9Q-acu" id="dPq-Hc-1qI"/>
                         <outlet property="userHostLabel" destination="V36-NY-x0W" id="c4z-N2-WvU"/>
                         <outlet property="userHostLabelNow" destination="bcc-Ix-MUn" id="DgK-iu-bPl"/>

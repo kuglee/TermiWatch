@@ -18,6 +18,12 @@ let hkDataTypesOfInterest = Set([
 class ViewController: UIViewController {
   @IBOutlet weak var usernameTextfield: UITextField!
   @IBOutlet weak var hostnameTextfield: UITextField!
+  @IBOutlet weak var temperatureSwitch: UISwitch!
+  @IBOutlet weak var batterySwitch: UISwitch!
+  @IBOutlet weak var activitySwitch: UISwitch!
+  @IBOutlet weak var stepSwitch: UISwitch!
+  @IBOutlet weak var hrSwitch: UISwitch!
+  @IBOutlet weak var calendarSwitch: UISwitch!
   @IBOutlet weak var warningLabel: UILabel!
   
   var session: WCSession?
@@ -28,6 +34,8 @@ class ViewController: UIViewController {
     self.warningLabel.isHidden = true
     
     createWCSession()
+    
+    setDefaultSwitchesStatus()
     
     let dismissalTap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
     view.addGestureRecognizer(dismissalTap)
@@ -49,13 +57,28 @@ class ViewController: UIViewController {
     }
   }
   
+  func setDefaultSwitchesStatus() {
+    self.temperatureSwitch.setOn(true, animated: false)
+    self.batterySwitch.setOn(true, animated: false)
+    self.activitySwitch.setOn(true, animated: false)
+    self.stepSwitch.setOn(true, animated: false)
+    self.hrSwitch.setOn(true, animated: false)
+    self.calendarSwitch.setOn(false, animated: false)
+  }
+  
   @IBAction func updateConfigToWatch(_ sender: UIButton) {
     let username: String = self.usernameTextfield.text!
     let hostname: String = self.hostnameTextfield.text!
     if !isInputLengthValid(username: username, hostname: hostname) { return }
     
     let data = ["username": username,
-                "hostname": hostname]
+                "hostname": hostname,
+                "temperature": self.temperatureSwitch.isOn,
+                "battery": self.batterySwitch.isOn,
+                "activity": self.activitySwitch.isOn,
+                "steps": self.stepSwitch.isOn,
+                "heart-rate": self.hrSwitch.isOn,
+                "calendar": self.calendarSwitch.isOn] as [String : Any]
     
     if let validSession = self.session, validSession.isReachable {
       validSession.sendMessage(data, replyHandler: nil, errorHandler: nil)
@@ -65,6 +88,7 @@ class ViewController: UIViewController {
   func isInputLengthValid(username: String, hostname: String) -> Bool {
     self.warningLabel.isHidden = true
     if (username.count + hostname.count > 9) {
+      self.warningLabel.text = "Max total Characters for username and hostname: 9"
       self.warningLabel.isHidden = false
       return false
     }

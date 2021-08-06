@@ -175,10 +175,17 @@ func batteryIndicatorString(percent: UInt) -> String {
 class InterfaceController: WKInterfaceController {
   @IBOutlet weak var userHostLabelNow: WKInterfaceLabel!
   @IBOutlet var batteryLabel: WKInterfaceLabel!
+  @IBOutlet weak var batteryGroup: WKInterfaceGroup!
   @IBOutlet var activityLabel: WKInterfaceLabel!
+  @IBOutlet weak var activityGroup: WKInterfaceGroup!
   @IBOutlet var stepsLabel: WKInterfaceLabel!
+  @IBOutlet weak var stepsGroup: WKInterfaceGroup!
   @IBOutlet var heartRateLabel: WKInterfaceLabel!
+  @IBOutlet weak var heartRateGroup: WKInterfaceGroup!
   @IBOutlet var temperatureLabel: WKInterfaceLabel!
+  @IBOutlet weak var temperatureGroup: WKInterfaceGroup!
+  @IBOutlet var calendarLabel: WKInterfaceLabel!
+  @IBOutlet weak var calendarGroup: WKInterfaceGroup!
   @IBOutlet weak var userHostLabel: WKInterfaceLabel!
   
   let session = WCSession.default
@@ -318,8 +325,20 @@ extension InterfaceController: WCSessionDelegate {
   func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
     let username = message["username"] as? String ?? "user"
     let hostname = message["hostname"] as? String ?? "watch"
+    let showTemperature = message["temperature"] as? Bool ?? true
+    let showBattery = message["battery"] as? Bool ?? true
+    let showActivity = message["activity"] as? Bool ?? true
+    let showSteps = message["steps"] as? Bool ?? true
+    let showHeartRate = message["heart-rate"] as? Bool ?? true
+    let showCalendar = message["calendar"] as? Bool ?? false
     
     self.userHostLabelNow.setText(username + "@" + hostname + ":~ $ now")
     self.userHostLabel.setText(username + "@" + hostname + ":~ $")
+    self.temperatureGroup.setHidden(!showTemperature)
+    self.batteryGroup.setHidden(!showBattery)
+    self.activityGroup.setHidden(!showActivity)
+    self.stepsGroup.setHidden(!showSteps)
+    self.heartRateGroup.setHidden(!showHeartRate)
+    self.calendarGroup.setHidden(!showCalendar)
   }
 }
