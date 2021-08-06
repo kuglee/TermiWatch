@@ -31,6 +31,7 @@
 		5DD84FF8245F172E00E780A4 /* Swizzle in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FF7245F172E00E780A4 /* Swizzle */; };
 		5DD84FFB245F176400E780A4 /* PMKCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FFA245F176400E780A4 /* PMKCoreLocation */; };
 		5DD84FFD245F176800E780A4 /* PMKHealthKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5DD84FFC245F176800E780A4 /* PMKHealthKit */; };
+		B639AD6C26BDE85200895D4F /* EventKitUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B639AD6B26BDE85200895D4F /* EventKitUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		5DD84FE4245F12D800E780A4 /* TermiWatch WatchKit Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "TermiWatch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		5DD84FE8245F132B00E780A4 /* TermiWatch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TermiWatch.entitlements; sourceTree = "<group>"; };
 		5DD84FE9245F134E00E780A4 /* SF-Mono-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Regular.otf"; sourceTree = "<group>"; };
+		B639AD6B26BDE85200895D4F /* EventKitUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventKitUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,6 +187,7 @@
 				5DD84FE1245F12D700E780A4 /* TemperatureNotifier.swift */,
 				5DD84FD1245F118500E780A4 /* Assets.xcassets */,
 				5DD84FD3245F118500E780A4 /* Info.plist */,
+				B639AD6B26BDE85200895D4F /* EventKitUtils.swift */,
 			);
 			path = "TermiWatch WatchKit Extension";
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				5DD84FE7245F12D800E780A4 /* BatteryInfoNotifier.swift in Sources */,
 				5DD84FE6245F12D800E780A4 /* HealthKitUtils.swift in Sources */,
 				5DD84FCE245F118400E780A4 /* InterfaceController.swift in Sources */,
+				B639AD6C26BDE85200895D4F /* EventKitUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
