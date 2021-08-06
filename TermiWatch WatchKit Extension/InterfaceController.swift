@@ -1,5 +1,6 @@
 import Foundation
 import HealthKit
+import EventKit
 import PMKCoreLocation
 import PMKHealthKit
 import PromiseKit
@@ -219,7 +220,50 @@ class InterfaceController: WKInterfaceController {
     }.catch {
       print("Error:", $0)
     }
+    
+    // MARK: - Calendar
+    
+    let store = EKEventStore()
+    
+    let ekStatus = EKEventStore.authorizationStatus(for: .event)
+    switch (ekStatus) {
+    case EKAuthorizationStatus.notDetermined:
+      store.requestAccess(to: .event) { granted, error in
+        // Handle the response to the request.
+      }
+      self.calendarLabel.setText("notDetermined")
+    case EKAuthorizationStatus.authorized:
+      // Get the appropriate calendar.
+      let calendar = Calendar.current
 
+      // Create the start date components
+      var oneDayAgoComponents = DateComponents()
+      oneDayAgoComponents.day = -1
+      let oneDayAgo = calendar.date(byAdding: oneDayAgoComponents, to: Date())
+
+      // Create the end date components.
+      var oneYearFromNowComponents = DateComponents()
+      oneYearFromNowComponents.year = 1
+      let oneYearFromNow = calendar.date(byAdding: oneYearFromNowComponents, to: Date())
+
+      // Create the predicate from the event store's instance method.
+      var predicate: NSPredicate? = nil
+      if let anAgo = oneDayAgo, let aNow = oneYearFromNow {
+        predicate = store.predicateForEvents(withStart: anAgo, end: aNow, calendars: nil)
+      }
+
+      // Fetch all events that match the predicate.
+      var events: [EKEvent]? = nil
+      if let aPredicate = predicate {
+        events = store.events(matching: aPredicate)
+        self.calendarLabel.setText(events?[0].title)
+      }
+    case EKAuthorizationStatus.restricted, EKAuthorizationStatus.denied:
+      self.calendarLabel.setText("restricted")
+    default:
+      self.calendarLabel.setText("error")
+    }
+    
     // MARK: - Health
 
     let healthStore = HKHealthStore()

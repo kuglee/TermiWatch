@@ -1,5 +1,6 @@
 import CoreLocation
 import HealthKit
+import EventKit
 import PMKCoreLocation
 import PMKHealthKit
 import PromiseKit
@@ -46,6 +47,10 @@ class ViewController: UIViewController {
       HKHealthStore().requestAuthorization(toShare: nil, read: hkDataTypesOfInterest)
     }.catch {
       print("Error:", $0)
+    }
+    
+    EKEventStore().requestAccess(to: .event) { granted, error in
+      // Handle the response to the request.
     }
   }
   

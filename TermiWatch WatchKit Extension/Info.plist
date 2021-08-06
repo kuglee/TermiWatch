@@ -34,6 +34,8 @@
 	<string>Your health records will be used to display activity data.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Your location data will be used to display weather data. </string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>Your calendar data will be used to display event</string>
 	<key>OpenWeatherMapAPIKey</key>
 	<string>8d30dae09830ab2917caface6d6cf1c5</string>
 	<key>WKExtensionDelegateClassName</key>
