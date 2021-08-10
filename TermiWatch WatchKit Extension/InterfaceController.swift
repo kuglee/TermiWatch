@@ -239,6 +239,15 @@ class InterfaceController: WKInterfaceController {
       self.calendarLabel.setText("error")
     }
     
+    NotificationCenter.default.addObserver(
+      forName: .EKEventStoreChanged,
+      object: eventStore,
+      queue: nil
+    ) { [weak self] notification in
+      let calendar = Calendar.current
+      self?.calendarLabel.setText(fetchTopEvent(eventStore: eventStore, calendar: calendar))
+    }
+    
     // MARK: - Health
 
     let healthStore = HKHealthStore()

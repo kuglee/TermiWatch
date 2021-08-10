@@ -10,20 +10,14 @@ func eventRequestAccess(eventStore: EKEventStore) {
 
 func fetchTopEvent(eventStore: EKEventStore, calendar: Calendar) -> String {
   // Create the start date components
-  var oneDayAgoComponents = DateComponents()
-  oneDayAgoComponents.day = -1
-  let oneDayAgo = calendar.date(byAdding: oneDayAgoComponents, to: Date())
+  let now = Date()
   
   // Create the end date components.
-  var oneDayFromNowComponents = DateComponents()
-  oneDayFromNowComponents.day = 1
-  let oneDayFromNow = calendar.date(byAdding: oneDayFromNowComponents, to: Date())
+  let tomorrow = Date().addingTimeInterval(60 * 60 * 24)
   
   // Create the predicate from the event store's instance method.
   var predicate: NSPredicate? = nil
-  if let anAgo = oneDayAgo, let aNow = oneDayFromNow {
-    predicate = eventStore.predicateForEvents(withStart: anAgo, end: aNow, calendars: nil)
-  }
+  predicate = eventStore.predicateForEvents(withStart: now, end: tomorrow, calendars: nil)
   
   // Fetch all events that match the predicate.
   var events: [EKEvent]? = nil
