@@ -25,6 +25,6 @@ func fetchTopEvent(eventStore: EKEventStore, calendar: Calendar) -> String {
     events = eventStore.events(matching: aPredicate)
   }
 
-  let topEventTitle = events?[0].title ?? "No more events"
+  let topEventTitle = events?.first?.title ?? "No more events"
   return topEventTitle
 }
