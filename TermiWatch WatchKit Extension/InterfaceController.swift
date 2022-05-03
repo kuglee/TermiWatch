@@ -208,10 +208,17 @@ class InterfaceController: WKInterfaceController {
     // MARK: - Health
 
     let healthStore = HKHealthStore()
-    let dummyHKDataType = HKObjectType.quantityType(forIdentifier: .stepCount)!
+    let hkDataTypesOfInterest = Set([
+        HKObjectType.activitySummaryType(),
+        HKCategoryType.categoryType(forIdentifier: .appleStandHour)!,
+        HKObjectType.quantityType(forIdentifier: .activeEnergyBurned)!,
+        HKObjectType.quantityType(forIdentifier: .appleExerciseTime)!,
+        HKObjectType.quantityType(forIdentifier: .heartRate)!,
+        HKObjectType.quantityType(forIdentifier: .stepCount)!,
+    ])
 
     firstly {
-      healthStore.requestAuthorization(toShare: nil, read: [dummyHKDataType])
+      healthStore.requestAuthorization(toShare: nil, read: hkDataTypesOfInterest)
     }.done { _ in
       subscribeToActivitySummary(
         forSampleType: HKSampleType.quantityType(
