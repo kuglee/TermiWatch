@@ -1,10 +1,12 @@
 import Foundation
 import HealthKit
+import EventKit
 import PMKCoreLocation
 import PMKHealthKit
 import PromiseKit
 import Swizzle
 import WatchKit
+import WatchConnectivity
 
 // MARK: - UIKit stubs
 
@@ -172,14 +174,28 @@ func batteryIndicatorString(percent: UInt) -> String {
 }
 
 class InterfaceController: WKInterfaceController {
+  @IBOutlet weak var userHostLabelNow: WKInterfaceLabel!
   @IBOutlet var batteryLabel: WKInterfaceLabel!
+  @IBOutlet weak var batteryGroup: WKInterfaceGroup!
   @IBOutlet var activityLabel: WKInterfaceLabel!
+  @IBOutlet weak var activityGroup: WKInterfaceGroup!
   @IBOutlet var stepsLabel: WKInterfaceLabel!
+  @IBOutlet weak var stepsGroup: WKInterfaceGroup!
   @IBOutlet var heartRateLabel: WKInterfaceLabel!
+  @IBOutlet weak var heartRateGroup: WKInterfaceGroup!
   @IBOutlet var temperatureLabel: WKInterfaceLabel!
+  @IBOutlet weak var temperatureGroup: WKInterfaceGroup!
+  @IBOutlet var calendarLabel: WKInterfaceLabel!
+  @IBOutlet weak var calendarGroup: WKInterfaceGroup!
+  @IBOutlet weak var userHostLabel: WKInterfaceLabel!
+  
+  let session = WCSession.default
 
   override func awake(withContext context: Any?) {
     super.awake(withContext: context)
+    
+    session.delegate = self
+    session.activate()
 
     // MARK: - Temperature
 
@@ -204,7 +220,34 @@ class InterfaceController: WKInterfaceController {
     }.catch {
       print("Error:", $0)
     }
-
+    
+    // MARK: - Calendar
+    
+    let eventStore = EKEventStore()
+    
+    let ekStatus = EKEventStore.authorizationStatus(for: .event)
+    switch ekStatus {
+    case EKAuthorizationStatus.notDetermined:
+      eventRequestAccess(eventStore: eventStore)
+      self.calendarLabel.setText("notDetermined")
+    case EKAuthorizationStatus.authorized:
+      let calendar = Calendar.current
+      self.calendarLabel.setText(fetchTopEvent(eventStore: eventStore, calendar: calendar))
+    case EKAuthorizationStatus.restricted, EKAuthorizationStatus.denied:
+      self.calendarLabel.setText("restricted")
+    default:
+      self.calendarLabel.setText("error")
+    }
+    
+    NotificationCenter.default.addObserver(
+      forName: .EKEventStoreChanged,
+      object: eventStore,
+      queue: nil
+    ) { [weak self] notification in
+      let calendar = Calendar.current
+      self?.calendarLabel.setText(fetchTopEvent(eventStore: eventStore, calendar: calendar))
+    }
+    
     // MARK: - Health
 
     let healthStore = HKHealthStore()
@@ -306,5 +349,31 @@ class InterfaceController: WKInterfaceController {
     // Hack to make the digital time overlay disappear
     // from: https://github.com/steventroughtonsmith/SpriteKitWatchFace
     hideTimeOnce()
+  }
+}
+
+extension InterfaceController: WCSessionDelegate {
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    
+  }
+
+  func session(_ session: WCSession, didReceiveMessage message: [String : Any]) {
+    let username = message["username"] as? String ?? "user"
+    let hostname = message["hostname"] as? String ?? "watch"
+    let showTemperature = message["temperature"] as? Bool ?? true
+    let showBattery = message["battery"] as? Bool ?? true
+    let showActivity = message["activity"] as? Bool ?? true
+    let showSteps = message["steps"] as? Bool ?? true
+    let showHeartRate = message["heart-rate"] as? Bool ?? true
+    let showCalendar = message["calendar"] as? Bool ?? false
+    
+    self.userHostLabelNow.setText(username + "@" + hostname + ":~ $ now")
+    self.userHostLabel.setText(username + "@" + hostname + ":~ $")
+    self.temperatureGroup.setHidden(!showTemperature)
+    self.batteryGroup.setHidden(!showBattery)
+    self.activityGroup.setHidden(!showActivity)
+    self.stepsGroup.setHidden(!showSteps)
+    self.heartRateGroup.setHidden(!showHeartRate)
+    self.calendarGroup.setHidden(!showCalendar)
   }
 }

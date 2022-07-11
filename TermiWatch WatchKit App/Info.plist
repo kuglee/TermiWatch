@@ -26,7 +26,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>com.kuglee.TermiWatch</string>
+	<string>com.k0042n.TermiWatch</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

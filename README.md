@@ -43,7 +43,7 @@ For devices running watchOS 5 or higher.
       ![Show project and targets list](Screenshots/Show_project_and_targets_list.png)
       1. Select the **General** tab:  
       ![Change bundle identifier 1](Screenshots/Change_bundle_identifier1.png)
-      1. For each of the 3 **targets** replece *kuglee* in the **Bundle Identifier** field with the name of your developer account. (The name of your Apple ID without the *@xxxx.com*.)
+      1. For each of the 3 **targets** replece *k0042n* in the **Bundle Identifier** field with the name of your developer account. (The name of your Apple ID without the *@xxxx.com*.)
       ![Change bundle identifier 2](Screenshots/Change_bundle_identifier2.png)
   1. Change the project's team:
       1. Select the **Signing & Capabilities** tab:    
@@ -52,7 +52,7 @@ For devices running watchOS 5 or higher.
       ![Change team 2](Screenshots/Change_team2.png)    
   1. Manually replace bundle identifiers:
       1. Select **Xcode** menu -> **Find** -> **Find and Replace in Project…**.
-      1. In the **Text** field type *kuglee*.
+      1. In the **Text** field type *k0042n*.
       1. In the **With** field type the name of your developer account. (The name of your Apple ID without the @xxxx.com.)
       1. Click the **Replace All** button.
   ![Change bundle identifier 3](Screenshots/Change_bundle_identifier3.png)
