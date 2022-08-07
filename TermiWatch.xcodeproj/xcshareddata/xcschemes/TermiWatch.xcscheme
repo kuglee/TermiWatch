@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1010"
+   LastUpgradeVersion = "1340"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5D3E852821A0246C00FA946B"
+               BlueprintIdentifier = "5DD84FA4245F118000E780A4"
                BuildableName = "TermiWatch.app"
                BlueprintName = "TermiWatch"
                ReferencedContainer = "container:TermiWatch.xcodeproj">
@@ -27,19 +27,17 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <Testables>
-      </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E852821A0246C00FA946B"
+            BlueprintIdentifier = "5DD84FA4245F118000E780A4"
             BuildableName = "TermiWatch.app"
             BlueprintName = "TermiWatch"
             ReferencedContainer = "container:TermiWatch.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <Testables>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -55,14 +53,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E852821A0246C00FA946B"
+            BlueprintIdentifier = "5DD84FA4245F118000E780A4"
             BuildableName = "TermiWatch.app"
             BlueprintName = "TermiWatch"
             ReferencedContainer = "container:TermiWatch.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <AdditionalOptions>
-      </AdditionalOptions>
       <LocationScenarioReference
          identifier = "com.apple.dt.IDEFoundation.CurrentLocationScenarioIdentifier"
          referenceType = "1">
@@ -78,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5D3E852821A0246C00FA946B"
+            BlueprintIdentifier = "5DD84FA4245F118000E780A4"
             BuildableName = "TermiWatch.app"
             BlueprintName = "TermiWatch"
             ReferencedContainer = "container:TermiWatch.xcodeproj">
